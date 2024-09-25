@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- обновление страницы  -->
+    <meta http-equiv="refresh" content="">
+    <title>pasha</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="Indexcss.css" rel="stylesheet">
+    <link href="javaSC.js" rel="stylesheet">
+
+    <style>
+        .container {
+        }
+
+        .underline-half {
+            width: 70%;
+            height: 0.3px;
+            background-color: red; /* Синий цвет подчеркивания */
+            margin: 0 auto;
+            position: relative;
+            bottom: 1px;
+        }
+    </style>
+    <style>
+        <!-- увеличение изображения при наведении -->
+        .logo {
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function copyText() {
+            // Получаем элемент с текстом
+            var text = document.getElementById("copyText").innerText;
+
+            // Создаем временный элемент <textarea> для копирования
+            var tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Показываем уведомление о копировании
+            alert("Текст скопирован: " + text);
+        }
+    </script>
+    <!-- Изображение-->
+    <style>
+        .styled-image {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            max-height: 550px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 2, 0.2);
+            transition: opacity 0.9s ease;
+            margin-top: 20px;
+        }
+
+            .styled-image:hover {
+                opacity: 0.8;
+            }
+    </style>
+    <style>
+        .body {
+        }
+    </style>
+    <style>
+        /* Flexbox по умолчанию */
+        .flexoff {
+            display: flex;
+        }
+
+        /* Отключение Flexbox  */
+        @media (max-width: 767px) {
+            .flexoff {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #363430; background-position: center;" class="">
+
+
+
+    <nav class="  " style="background-color: #434343 ">
+        <div class="  flex ">
+            <!-- Логотип слева -->
+            <div class="container mx-auto flex items-center ml-5">
+                <img src="logo1.png" alt="Logo" class="logo h-20 mr-4 shake-on-hover" style=" ">
+
+            </div>
+            <!-- Навигационные ссылки -->
+            <div class="verx container mx-auto flex items-center space-x-12 text-xs " style=" ">
+                <!-- Навигационные ссылки -->
+                <span class="address1" style=" color:white;font-family: 'Arial', sans-serif; ">Сочи, ул.Донская, 9-а <br />8999 171-89-51,<br />  da@mail.ru</span>
+                <a href="main.html" class="Nav_ccilki text-white hover:text-yellow-500  font-arial ">О НАС</a>
+
+                <a href="glavnoe.html" class="Nav_ccilki text-white hover:text-yellow-500 font-Slab Bold">ПРОЕКТЫ</a>
+
+                <a href="#" class="Nav_ccilki text-white hover:text-yellow-500 ">УСЛУГИ</a>
+                <span style="margin-left:20px">|</span>
+                <a href="#" class="Nav_ccilki text-white hover:text-yellow-500 ">КОНТАКТЫ</a>
+
+                <style>
+                    .verx {
+                        font-size: 15px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .verx {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .address1 {
+                        position: absolute;
+                        left: 200px
+                    }
+
+                    @media (max-width: 767px) {
+                        .address1 {
+                            position: absolute;
+                            left: 100px;
+                            font-size: 10px;
+                        }
+                    }
+
+                    @media (max-width: 767px) {
+                        #openModalBtn2 {
+                            display: none;
+                        }
+                    }
+                </style>
+            </div>
+
+            <div class="verx container mx-auto flex items-center  md:space-x-1 text-xs" style=" ">
+                <!-- телефон -->
+                <!-- <p id="copyText" class="Nav_ccilki text-white cursor-pointer hover:underline mr-10 " onclick="copyText()">+79991708960</p> -->
+                <!-- Кнопка "Написать нам" -->
+                <button id="openModalBtn2" style="background-color:steelblue; margin-left:100px" class="Nav_ccilki But_Zayav mr-10  bg-blue-500 text-white px-3 py-1.5 rounded hover:bg-blue-700 ">Написать нам</button>
+            </div>
+        </div>
+    </nav>
+    <!--  UNDERLINE  -->
+    <div class="underline-half" style=""></div>
+    <!-- ТЕКСТ С ИСПОЛЬЗОВАНИЕМ GRID И КАРТИНКИ РЯДОМ С ТЕКСТОМ     -->
+    <div class="container_for_text" style="background-color: #434343;  ">
+
+        <div class="" style="font-family: 'Arial', sans-serif; ">
+            <h1 class="mainT" style="color:white; font-size:35px; margin-top: 50px "> Инженерно-строительная компания FB  </h1>
+            <h2 class="subT" style="color: white; font-size: 15px;"> Сочи - Адлер </h2>
+        </div>
+        <div class="flex">
+            <div class="intoG  " style="font-family: 'Arial', sans-serif; margin-top: 40px ">
+                <div class=" intoI   "><img src="img/grip1.JPG" alt=""><span>Загородные дома</span></div>
+                <div class="  intoI  "><img src="img/grip1.JPG" alt=""><span>Частные квартиры</span></div>
+                <div class="  intoI  "><img src="img/grip1.JPG" alt=""><span>Промышленные объекты</span></div>
+                <div class="  intoI  "><img src="img/grip1.JPG" alt=""><span>Коммерческие предприятия</span></div>
+
+            </div>
+
+            <div class="flex">
+                <div class="ContForPhotos ">
+                    <div class="ContIMG">
+                        <img src="img/rab1.JPG" />
+                        <img src="img/rab2.JPG" />
+                        <img src="img/rab3.JPG" />
+                        <img src="img/rab4.JPG" />
+
+                    </div>
+                    <div>
+                        <button class="naz" onclick="moveCarousel1(-1)">&#10094;</button>
+                        <button class="vper" onclick="moveCarousel1(1)">&#10095;</button>
+                    </div>
+                    <div class="indicators" id="indicators"></div> <!-- Индикаторы -->
+
+                </div>
+
+                <style>
+
+                    .ContForPhotos {
+                        position: absolute;
+                        bottom: 20px;
+                        max-width: 700px;
+                        width: auto;
+                        overflow: hidden;
+                        max-height: 550px;
+                        margin-bottom: 340px;
+                        margin-left: 50px;
+                        border-radius: 5px;
+                    }
+
+                    .ContIMG {
+                        display: flex;
+                        transition: transform 0.5s ease-in-out;
+                        position: relative;
+                        width: 100%;
+                        height: auto
+                    }
+
+                        .ContIMG img {
+                            width: 100vw;
+                            height: auto;
+                            object-fit: cover
+                        }
+
+                    .naz, .vper {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: rgba(0, 0, 0, 0.5);
+                        color: white;
+                        border: none;
+                        padding: 10px;
+                        cursor: pointer;
+                        z-index: 10;
+                    }
+
+                    .naz {
+                        left: 0;
+                    }
+
+                    .vper {
+                        right: 0;
+                    }
+
+                    .indicators {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        display: flex;
+                    }
+
+                    .indicator {
+                        width: 10px;
+                        height: 10px;
+                        background-color: white;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                        opacity: 0.5;
+                        transition: opacity 0.3s;
+                    }
+
+                        .indicator.active {
+                            opacity: 1;
+                        }
+                </style>
+                <script>
+                    let currentIndex1 = 0;
+                    const images1 = document.querySelectorAll('.ContIMG img');
+                    const totalImages1 = images1.length;
+                    const indicatorsContainer = document.getElementById('indicators');
+
+                    // Функция перемещения карусели
+                    function moveCarousel1(direction) {
+                        const imageWidth = document.querySelector('.ContForPhotos').clientWidth; // Получаем ширину контейнера .con
+
+                        currentIndex1 += direction;
+
+                        if (currentIndex1 < 0) {
+                            currentIndex1 = totalImages1 - 1;
+                        } else if (currentIndex1 >= totalImages1) {
+                            currentIndex1 = 0;
+                        }
+
+                        const offset = -currentIndex1 * imageWidth; // Используем ширину контейнера для смещения
+                        document.querySelector('.ContIMG').style.transform = `translateX(${offset}px)`;
+                        updateIndicators(); // Обновляем индикаторы
+                    }
+                    function updateIndicators() {
+                        // Удаляем все существующие индикаторы
+                        indicatorsContainer.innerHTML = '';
+
+                        // Создаем новые индикаторы
+                        for (let i = 0; i < totalImages1; i++) {
+                            const indicator = document.createElement('div');
+                            indicator.classList.add('indicator');
+                            if (i === currentIndex1) {
+                                indicator.classList.add('active');
+                            }
+                            indicatorsContainer.appendChild(indicator);
+                        }
+                    }
+
+                    function startAutoSlide() {
+                        setInterval(() => {
+                            moveCarousel1(1); // Двигаем карусель вперед на один слайд
+                        }, 10000); // 3000 миллисекунд = 3 секунды
+                    }
+                    window.onload = startAutoSlide;
+
+                    // Обновление ширины изображений при изменении размера экрана
+                    window.addEventListener('resize', () => {
+                        moveCarousel1(0); // Переместить карусель на текущий индекс при изменении размера экрана
+                    });
+                </script>
+            </div>
+        </div>
+
+
+
+
+        <!-- Кнопка открытия модального окна -->
+        <button class="But_Zayav" id="openModalBtn">Заказать консультацию</button>
+        <!-- Модальное окно -->
+        <div id="consultationModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Заказать консультацию</h2>
+                <form id="consultationForm">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <style>
+            /* Основные стили для кнопки */
+            #openModalBtn {
+                padding: 10px 20px;
+                background-color: red;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+                #openModalBtn:hover {
+                    background-color: darkred;
+                }
+
+            /* Стили для модального окна */
+            .modal {
+                display: none; /* По умолчанию окно скрыто */
+                position: fixed;
+                z-index: 1000; /* Поверх всех элементов */
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            /* Стили для контента внутри модального окна */
+            .modal-content {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%;
+                max-width: 400px; /* Максимальная ширина окна */
+                text-align: center;
+                position: relative;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+                animation: fadeIn 0.3s ease;
+            }
+
+            /* Анимация для появления окна */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* Стили для кнопки закрытия окна */
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 24px;
+                cursor: pointer;
+                color: #333;
+                transition: color 0.3s ease;
+            }
+
+                .close:hover {
+                    color: #f00;
+                }
+
+            /* Стили для формы */
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+                form label {
+                    font-weight: bold;
+                    text-align: left;
+                }
+
+                form input[type="text"],
+                form input[type="tel"] {
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                    width: 100%;
+                }
+
+                form button {
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+
+                    form button:hover {
+                        background-color: #45a049;
+                    }
+            /* Адаптивность для мобильных устройств */
+            @media (max-width: 600px) {
+                .modal-content {
+                    width: 90%;
+                }
+            }
+        </style>
+        <script>
+            // Получаем элементы
+            const modal = document.getElementById("consultationModal");
+            const btn = document.getElementById("openModalBtn");
+            const btn2 = document.getElementById("openModalBtn2");
+            const closeBtn = document.querySelector(".close");
+            const phoneInput = document.getElementById("phone");
+            const form = document.getElementById("consultationForm");
+
+            // Открытие модального окна и очистка полей несколько кнопок
+            btn.onclick = function () {
+                modal.style.display = "flex";
+                form.reset(); // Очищаем поля формы при открытии модального окна
+            }
+            btn2.onclick = function () {
+                modal.style.display = "flex";
+                form.reset(); // Очищаем поля формы при открытии модального окна
+            }
+
+            // Закрытие модального окна при нажатии на крестик
+            closeBtn.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // Валидация формы перед отправкой
+            form.onsubmit = function (event) {
+                event.preventDefault();
+                const name = document.getElementById("name").value;
+                const phone = document.getElementById("phone").value;
+
+                // Регулярное выражение для проверки корректного ввода номера телефона
+                const phonePattern = /^\+7\s\d{3}\s\d{3}-\d{2}-\d{2}$/;
+
+                if (name.trim() === "") {
+                    alert("Пожалуйста, введите ваше имя.");
+                } else if (!phonePattern.test(phone)) {
+                    alert("Пожалуйста, введите корректный номер телефона.");
+                } else {
+                    alert("Спасибо за заявку!");
+                    modal.style.display = "none";
+                }
+            }
+
+            // Функция для форматирования номера телефона
+            phoneInput.addEventListener("input", function () {
+                let value = phoneInput.value.replace(/\D/g, ''); // Удаляем все символы кроме цифр
+
+                // Ограничиваем длину ввода 11 цифрами (без учета форматирующих символов)
+                if (value.length > 11) value = value.slice(0, 11);
+                let formattedValue = '+7 ';
+                if (value.length > 1) {
+                    formattedValue += value.slice(1, 4); // Первые три цифры после кода страны
+                }
+                if (value.length >= 5) {
+                    formattedValue += ' ' + value.slice(4, 7); // Следующие три цифры
+                }
+                if (value.length >= 7) {
+                    formattedValue += '-' + value.slice(7, 9); // Первые две цифры после первой группы
+                }
+                if (value.length >= 9) {
+                    formattedValue += '-' + value.slice(9, 11); // Последние две цифры
+                }
+                phoneInput.value = formattedValue;
+            });
+            // Автоматическое добавление кода страны при фокусе на поле ввода телефона
+            phoneInput.addEventListener("focus", function () {
+                if (this.value === '') {
+                    this.value = '+7 '; // Код страны (Россия)
+                }
+            });
+
+        </script>
+
+
+
+        <!--css ТЕКСТ С ИСПОЛЬЗОВАНИЕМ GRID И КАРТИНКИ РЯДОМ С ТЕКСТОМ   -->
+        <style>
+            .container_for_text {
+                text-align: center;
+                padding: 10px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 600px
+            }
+
+            .mainT, .subT {
+                margin-right: 350px;
+                padding: 0;
+            }
+
+            @media (max-width: 767px) {
+                .mainT, .subT {
+                    margin-right: 2px
+                }
+            }
+
+            .intoG {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+                justify-content: center;
+                max-width: 700px;
+                width: 100%;
+                margin-left: 500px
+            }
+
+            @media (max-width: 767px) {
+                .intoG {
+                    max-width: 200px;
+                    margin-left: 250px
+                }
+            }
+
+            .intoI {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: white;
+                padding: 20px;
+            }
+
+                .intoI img {
+                    width: 50px;
+                    height: auto;
+                    object-fit: cover;
+                }
+
+            .But_Zayav {
+                font-family: 'Arial', sans-serif;
+                margin: 30px;
+                margin-left: -350px;
+                cursor: pointer;
+                display: inline-block;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                color: white;
+                border: none;
+                padding: 7px 5px;
+                border-radius: 5px;
+                font-weight: bolder
+            }
+
+            @media (max-width: 767px) {
+                .But_Zayav {
+                    margin-left: 0
+                }
+            }
+
+            .But_Zayav:hover {
+                transform: scale(1.05)
+            }
+
+            .But_Zayav:active {
+                transform: scale(0.95);
+                box-shadow: 0 3px 10px rgba(0,0,0,0.2)
+            }
+        </style>
+        <!-- CSS GIF  -->
+        <script>
+            const container = document.querySelector('.container_for_text');
+            const gifs = [
+                'img/gif1.gif', // Замените на пути к вашим GIF
+                'img/gif2.gif'
+
+            ];
+            let currentGifIndex = 0;
+
+            function changeBackground() {
+                container.style.backgroundImage = `url(${gifs[currentGifIndex]})`;
+                currentGifIndex = (currentGifIndex + 1) % gifs.length;
+
+                // Задайте время показа каждого GIF
+                setTimeout(changeBackground, 10000); // 5000 миллисекунд = 5 секунд
+            }
+
+            // Старт анимации
+            changeBackground();
+        </script>
+    </div>
+
+
+
+    <div style="background-color: #434343;" class="flex">
+        <div class="con container">
+            <div class="car-img">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="Engine _ Motors.jpeg" alt="Description of Image" class=" " style="  ">
+                <img src="enjine2.jpeg" alt="Description of Image" class=" " style="  ">
+            </div>
+            <div>
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="" style="text-align:center">
+
+        </div>
+        <style>
+            .con {
+                position: relative;
+                max-width: 50%;
+                width: auto; /* Ширина контейнера карусели */
+                overflow: hidden; /* Скрываем изображения, выходящие за пределы контейнера */
+                height: auto;
+                max-height: 700px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            .car-img {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                position: relative; /* Оставляем относительное позиционирование, чтобы кнопки оставались на месте */
+                width: 100%;
+                height: auto;
+            }
+
+                .car-img img {
+                    width: 100vw; /* Изображения занимают всю ширину контейнера */
+                    height: auto;
+                    object-fit: cover; /* Сохраняем пропорции изображений */
+                }
+
+            .prev, .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
+            }
+        </style>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.car-img img');
+            const totalImages = images.length;
+
+            // Функция перемещения карусели
+            function moveCarousel(direction) {
+                const imageWidth = document.querySelector('.con').clientWidth; // Получаем ширину контейнера .con
+
+                currentIndex += direction;
+
+                if (currentIndex < 0) {
+                    currentIndex = totalImages - 1;
+                } else if (currentIndex >= totalImages) {
+                    currentIndex = 0;
+                }
+
+                const offset = -currentIndex * imageWidth; // Используем ширину контейнера для смещения
+                document.querySelector('.car-img').style.transform = `translateX(${offset}px)`;
+            }
+
+            // Обновление ширины изображений при изменении размера экрана
+            window.addEventListener('resize', () => {
+                moveCarousel(0); // Переместить карусель на текущий индекс при изменении размера экрана
+            });
+        </script>
+    </div>
+
+
+
+    <nav class=" " style="background-color: #434343;">
+        <div class=" container mx-auto items-center flex  ">
+            <div class="container mx-auto hz " style=" ">
+                <h1 class="cus_text ">Компания <br /> промышленного <br /> дизайна <span style="color: white; font-size: 65px;"> FB-FACTORY</span></h1>
+                <h2 class="h2_text " style="position: relative; bottom: 50px">Осуществляем полный цикл разработки дизайна <br />продукта </h2>
+
+            </div>
+            <style>
+                @media (max-width: 767px) {
+                    .hz {
+                        text-align: center;
+                        font-size: 14px;
+                        width: 100%;
+                        padding: 10px;
+                    }
+                }
+
+                @media {
+                    .text-container {
+                        text-align: center; /* Выравнивание текста по центру */
+                        max-width: 10px;
+                        width: 100%
+                    }
+                }
+            </style>
+        </div>
+
+        <!-- Кнопка оставить заявку-->
+        <div class=" container mx-auto " style="text-align: center; margin-top: 10px;  ">
+            <button class="cool-button But_Zav" style="   ">Оставить заявку!</button>
+
+            <style>
+                @media (max-width: 767px) {
+                    .But_Zav {
+                    }
+                }
+
+                .But_Zav {
+                }
+                /* Стили для кнопки */
+                .cool-button {
+                    font-family: 'Gothampro', Arial, sans-serif;
+                    background-color: #8B0000; /* Зеленый цвет */
+                    border: none;
+                    color: white;
+                    padding: 15px 30px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 10px;
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                    cursor: pointer;
+                    position: relative;
+                    bottom: 90px;
+                    right: 60px;
+                }
+                    /* Анимация при наведении */
+                    .cool-button:hover {
+                        transform: scale(1.05);
+                    }
+                    /* Анимация при нажатии */
+                    .cool-button:active {
+                        transform: scale(0.95);
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+                    }
+            </style>
+        </div>
+
+        <style>
+            .h2_text {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.9;
+                font-size: 16px;
+                font-weight: bold;
+                justify-content: right; /* Центрирование по горизонтали */
+                align-items: center; /* Центрирование по вертикали */
+                font-weight: bold;
+                font-style: normal;
+                color: white;
+                text-align: left;
+                word-spacing: 2px;
+                margin: 40px;
+                padding: 10px;
+                width: 100%;
+                height: auto;
+                max-height: 550px;
+            }
+        </style>
+        <style>
+            .cus_text {
+                font-family: 'Arial', sans-serif;
+                font-size: 55px;
+                font-weight: bold;
+                font-style: normal;
+                position: relative;
+                color: #333;
+                text-align: left;
+                line-height: 1.4;
+                margin: 40px;
+                padding: 10px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                text-transform: uppercase;
+                word-spacing: 1px;
+                justify-content: right; /* Центрирование по горизонтали */
+                align-items: center; /* Центрирование по вертикали */
+                color: #A9A9A9;
+                width: 100%;
+                height: auto;
+                max-height: 550px;
+            }
+        </style>
+        <!--тряска -->
+        <style>
+            .shake-on-hover {
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+                .shake-on-hover:hover {
+                    animation: shake 0.3s;
+                }
+
+            @keyframes shake {
+                0% {
+                    transform: translateX(0);
+                }
+
+                25% {
+                    transform: translateX(-10px);
+                }
+
+                50% {
+                    transform: translateX(10px);
+                }
+
+                75% {
+                    transform: translateX(-10px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+        </style>
+    </nav>
+
+
+
+
+
+
+
+    <main class="container mx-auto mt-10 text-center">
+        <h2 class="text-3xl font-semibold text-gray-800">Build something amazing</h2>
+        <p class="text-gray-600 mt-4">This is the main content area where you can describe your services, goals, or anything you want to showcase on the homepage.</p>
+        <a href="#" class="bg-blue-500 text-white px-6 py-3 mt-8 inline-block rounded hover:bg-blue-700">Get Started</a>
+    </main>
+
+    <footer class="bg-gray-800 p-6 mt-10">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Your Website Name. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

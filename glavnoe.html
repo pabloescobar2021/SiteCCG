@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- обновление страницы  -->
+    <meta http-equiv="refresh" content="">
+    <title>Onas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="Indexcss.css" rel="stylesheet">
+    <link rel="preload" href="Indexcss.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="Indexcss.css"></noscript>
+
+
+
+
+    <style>
+        .container {
+        }
+
+        .underline-half {
+            width: 70%;
+            height: 0.5px;
+            background-color: red; /* Синий цвет подчеркивания */
+            margin: 0 auto;
+            position: relative;
+            top: 50px;
+        }
+    </style>
+    <style>
+        <!-- увеличение изображения при наведении -->
+        .logo {
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function copyText() {
+            // Получаем элемент с текстом
+            var text = document.getElementById("copyText").innerText;
+
+            // Создаем временный элемент <textarea> для копирования
+            var tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Показываем уведомление о копировании
+            alert("Текст скопирован: " + text);
+        }
+    </script>
+    <!-- Изображение-->
+    <style>
+        .styled-image {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            max-height: 550px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 2, 0.2);
+            transition: opacity 0.9s ease;
+            margin-top: 20px;
+        }
+
+            .styled-image:hover {
+                opacity: 0.8;
+            }
+    </style>
+    <style>
+        /* Flexbox по умолчанию */
+        .flexoff {
+            display: flex;
+        }
+
+        /* Отключение Flexbox  */
+        @media (max-width: 767px) {
+            .flexoff {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #363430; background-position: center;" class="">
+
+
+    <nav class="" style="background-color: #434343; ">
+
+        <nav class="nav-menu " style="background-color: #897F79 ">
+            <div class="flex items-center">
+               <a href="main.html"> <img src="logo1.png" alt="Logo" class="logo h-20 mr-4" style=""></a>
+                <div class="nav-links items-center " style="">
+                    <a class="" style="font-size:10px ;color:white;font-family: 'Arial', sans-serif; ">Сочи, ул.Донская, 9-а <br /> 8999 171-89-51, da@mail.ru</a>
+                    <a href=""style="" class="MenuBut text-white hover:text-yellow-500 ">О НАС</a>
+                    <a href="" class="MenuBut text-white hover:text-yellow-500">ПРОЕКТЫ </a>
+                    <a href="#" class=" MenuBut text-white hover:text-yellow-500">УСЛУГИ</a>
+                    <a href="#" class="MenuBut text-white hover:text-yellow-500">КОНТАКТЫ</a>
+                            
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="verx " style="text-align:center; ">
+                <button id="openModalBtn2" style=" " class="text-white montserrat-1">Написать нам</button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="main.html" class="Nav_ccilki text-white hover:text-yellow-500">О НАС</a>
+            <a href="glavnoe.html" class="Nav_ccilki text-white hover:text-yellow-500">ПРОЕКТЫ</a>
+            <a href="#" class="Nav_ccilki text-white hover:text-yellow-500">УСЛУГИ</a>
+            <a href="#" class="Nav_ccilki text-white hover:text-yellow-500">КОНТАКТЫ</a>
+        </div>
+        <style>
+            .verx {
+                font-size: 15px;
+            }
+
+            @media (max-width: 767px) {
+                .verx {
+                    font-size: 12px;
+                }
+            }
+
+            .address1 {
+                position: absolute;
+                left: 200px
+            }
+
+            @media (max-width: 767px) {
+                .address1 {
+                    position: absolute;
+                    left: 100px;
+                    font-size: 10px;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                #openModalBtn2 {
+                    display: none;
+                }
+            }
+        </style>
+
+
+
+    </nav>
+    <!--  UNDERLINE  -->
+    <div class="underline-half" style=""></div>
+   
+
+    <footer class="bg-gray-800 p-6 mt-10">
+        <div class="container mx-auto text-center text-white">
+            &copy; 2024 Your Website Name. All rights reserved.
+        </div>
+    </footer>
+    <script src="javaSC.js"></script>
+</body>
+</html>

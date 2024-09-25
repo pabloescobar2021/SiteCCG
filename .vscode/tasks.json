@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Run Live Server",
+          "type": "shell",
+          "command": "live-server", // Убедитесь, что эта команда работает
+          "args": [],
+          "isBackground": true,
+          "problemMatcher": [
+              {
+                  "owner": "live-server",
+                  "fileLocation": "absolute",
+                  "pattern": [
+                      {
+                          "regexp": "^\\s*\\[(.*?)\\]\\s*(.*)$",
+                          "file": 1,
+                          "message": 2
+                      }
+                  ],
+                  "background": {
+                      "activeOnStart": true,
+                      "beginsPattern": "Serving " // Сообщение о запуске сервера
+                  }
+              }
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+      }
+  ]
+}
