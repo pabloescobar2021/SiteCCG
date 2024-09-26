@@ -2,8 +2,8 @@
  /* <!-- увеличение изображения при наведении --> */
  .logo {
     transition: transform 0.3s ease;
+    
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
