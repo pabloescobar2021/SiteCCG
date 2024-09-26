@@ -569,15 +569,31 @@ form {
             .gif-container {
                 width: auto; /* Ширина контейнера */
                 height: auto; /* Высота контейнера */
+                position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+                overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+                
+                
+            }
+            .gif-container::before{
+                content: ""; /* Создаём псевдоэлемент */
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                animation: changeGif 10s infinite; /* Анимация будет работать бесконечно с интервалом в 10 секунд */
-                justify-content: center;
-                align-items: center;
-                z-index: 2949249249;
+                animation: changeGif 10s infinite; /* Анимация смены фонов */
+                filter: blur(5px); /* Размытие фона */
+                z-index: 0; /* За всеми другими элементами */
             }
-            @keyframes changeGif {
+            .content_1{
+                position: relative; /* Относительное позиционирование для надстройки */
+                z-index: 20; /* Чтобы элементы были поверх размытого фона */
+                }
+
+            @keyframes changeGif { 
                 0% {
                     background-image: url('../img/gif1.gif');
                 }
@@ -590,4 +606,7 @@ form {
                 100% {
                     background-image: url('../img/gif2.gif');
                 }
+            }
+            .gif-container background-image {
+                filter: blur(20px);
             }
