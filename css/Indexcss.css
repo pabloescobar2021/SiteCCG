@@ -26,7 +26,7 @@
     height: 50px;
     position: fixed;
     width: 100%;
-    z-index: 55550;
+    z-index: 55;
     font-size: 14px;
     
 }  @media (max-width:1200px) {.nav-menu {}}
@@ -46,6 +46,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    z-index: 55;
 }
 
     .hamburger div {
@@ -53,6 +54,7 @@
         height: 3px;
         background-color: white;
         margin: 3px 0;
+        z-index: 55;
     }
 
 .mobile-menu {
@@ -64,6 +66,8 @@
     background-color: #434343;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 55;
+    
 }
          /* ������ � ���� ----> */
                                     #openModalBtn2 {
@@ -116,10 +120,12 @@
         color: white;
         text-decoration: none;
         margin-bottom: 10px;
+        
     }
 
     .mobile-menu.show {
         display: block;
+        position: fixed;
     }
 
 @media (max-width: 767px) {
@@ -532,6 +538,8 @@ form {
         margin-top:50px;margin-bottom: 20px;}
 
         /* Этапы работы  */
+        .DVITh1 {text-align: left; } 
+        @media (max-width:1200px) {.DVITh1 {margin-left: 50%  }}
 
         .DivItapi {
             display:block;
@@ -566,10 +574,64 @@ form {
             @media (max-width:1200px) {
                 .DivItapi {width: 100%;}
                 .DivAll div {flex:1 1 100%}
-                .TxtItapi .txt2, .txt3 {width:fit-content ; }
+                .TxtItapi .txt2, .txt3 {width:250px ;font-size: 14px; }
                 .TxtItapi .TxtFon {font-size: 150px;}
+                .TxtItapi .txt2 {top:30%}
+                .txt2 {position:absolute; }
+                .txt3 {width:auto; top:40% }
             }
         
+
+            .div_grid_svyaz { 
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin: 0 auto;
+                width: 60%;
+                height: auto;
+             }
+             .div_grid_1_txt {justify-content: center; align-items: center;}
+             .error-message {font-size: 10px; }
+             /* .div_grid_1_txt p { } */
+             button[type="submit"] {margin-top: 20px; width: 50%; margin-bottom: 70px;}
+             .form_1 [type="text"],[type="tel"] {height: 60px; }
+             .div_grid_svyaz .Usltxt {color: black; font-size: 20px;text-align: left; width: 500px;}
+
+             @media(max-width:1200px){
+                .div_grid_svyaz {display:flow-root ;}
+                .div_grid_svyaz .Usltxt {font-size: 20px;line-height: 1.4; text-align: left;width: auto;height: fit-content; }
+                button[type="submit"] {width: auto; }
+             }
+
+             .footer_div {background-color: rgb(255, 255, 255) ;display: grid;grid-template-columns: 25% 25% 25% 25%;width: 70%; margin: 0 auto;  }
+        .dda {margin-top: 10px; height: auto;display: grid; justify-content: center; align-items: center; }
+        
+        .footer_div h2 {
+            font-family: "Montserrat", sans-serif; 
+            font-weight: 500; color: rgb(67, 61, 61);
+            font-size: 20px; width: auto;
+        }
+        .footer_div a {
+            cursor: pointer;
+            
+        }
+        .footer_div a:hover{
+            color: blue; font-weight: 600; 
+        }
+
+        .halfunder {margin: 0 auto; width: 50%; background-color: rgb(89, 84, 84); height: 1px;}
+        
+        .marg12 {margin-top: 50px; }
+        .footer_div p, .footer_div a {height: auto;width:auto ; ;font-family: "Montserrat", sans-serif; font-size: 15px;text-align: left;  }
+
+        @media (max-width:1200px) {
+         .footer_div { display: flex;flex-wrap: wrap;width: 100%; }   
+         .marg12{ flex:1 1 50%;} 
+         .footer_div p, .footer_div a {height: auto; font-size: 10px;}
+         .dda{ justify-content:left; align-items: center;}
+        }
+
+
+
             .gif-container {
                 width: auto; /* Ширина контейнера */
                 height: auto; /* Высота контейнера */
