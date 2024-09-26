@@ -137,8 +137,8 @@
     
         const container = document.querySelector('.container_for_text');
         const gifs = [
-        '../img/gif1.gif', // �������� �� ���� � ����� GIF
-        '../img/gif2.gif'
+        'img/gif1.gif', 
+        'img/gif2.gif'
 
         ];
         let currentGifIndex = 0;
