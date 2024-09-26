@@ -37,6 +37,7 @@
     
     
     
+    
 }       
         .nav-links a:nth-child(2) {margin-left:500px}
         
@@ -69,6 +70,28 @@
     z-index: 55;
     
 }
+#ulsbutmenu { position: relative;display: inline-block;}
+.uslmenu {
+    z-index: 1000;
+    position: absolute;
+    display: none;
+    top: 100%; /* Можно изменить для нужного позиционирования */
+    left: 50%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.uslmenu a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #000;
+ }
+ .uslmenu:hover{ background-color: #ddd;}
+
+
+
          /* ������ � ���� ----> */
                                     #openModalBtn2 {
                                     
@@ -112,7 +135,7 @@
                                         #openModalBtn2:hover::after {
                                             opacity: 1; /* ��� ��������� �� ������ ������ ������������� ������� */
                                         }
-                                     .MenuBut{font-family: "Montserrat", sans-serif; font-weight:500; margin:30px; font-size: 16px; letter-spacing: 1px ;
+                                     .MenuBut{font-family: "Montserrat", sans-serif; font-weight:400; margin:30px; font-size: 14px; letter-spacing: 1px ;
                                      }
                                      
     .mobile-menu a {

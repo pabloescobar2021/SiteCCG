@@ -55,6 +55,16 @@
 
 
 
+                    
+
+                   
+                        
+
+
+
+
+
+
 
 
 
@@ -209,3 +219,23 @@ document.getElementById("form1").addEventListener("submit", function(event) {
     const re = /^\+?[0-9]{10,14}$/; // Пример регулярного выражения
     return re.test(phone);
     }                           
+
+
+
+     // Получаем элементы
+     const ulsbutmenu = document.getElementById('ulsbutmenu');
+     const uslmenuid = document.getElementById('uslmenuid');
+
+     // Обрабатываем клик по ссылке "Услуги"
+     ulsbutmenu.addEventListener('click', function(event) {
+         event.preventDefault(); // Предотвращаем переход по ссылке
+         // Показываем или скрываем окно с ссылками
+         uslmenuid.style.display = uslmenuid.style.display === 'block' ? 'none' : 'block';
+     });
+
+     // Закрываем всплывающее окно при клике вне его
+     document.addEventListener('click', function(event) {
+         if (!ulsbutmenu.contains(event.target) && !uslmenuid.contains(event.target)) {
+             uslmenuid.style.display = 'none';
+         }
+     });
