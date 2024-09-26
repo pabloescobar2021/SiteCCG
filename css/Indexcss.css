@@ -566,3 +566,28 @@ form {
                 .TxtItapi .TxtFon {font-size: 150px;}
             }
         
+            .gif-container {
+                width: auto; /* Ширина контейнера */
+                height: auto; /* Высота контейнера */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: changeGif 10s infinite; /* Анимация будет работать бесконечно с интервалом в 10 секунд */
+                justify-content: center;
+                align-items: center;
+                z-index: 2949249249;
+            }
+            @keyframes changeGif {
+                0% {
+                    background-image: url('../img/gif1.gif');
+                }
+                33% {
+                    background-image: url('../img/gif2.gif');
+                }
+                66% {
+                    background-image: url('../img/gif1.gif');
+                }
+                100% {
+                    background-image: url('../img/gif2.gif');
+                }
+            }

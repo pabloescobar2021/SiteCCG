@@ -135,22 +135,9 @@
 
                     /* CSS GIF */
     
-        const container = document.querySelector('.container_for_text');
-        const gifs = [
+        
         'img/gif1.gif', 
-        'img/gif2.gif'
+        'img/gif2.gif',
+        '../img/gif1.gif', 
+        '../img/gif2.gif'
 
-        ];
-        let currentGifIndex = 0;
-
-        function changeBackground() {
-            container.style.backgroundImage = `url(${gifs[currentGifIndex]})`;
-        currentGifIndex = (currentGifIndex + 1) % gifs.length;
-
-        // ������� ����� ������ ������� GIF
-        setTimeout(changeBackground, 10000); // 5000 ����������� = 5 ������
-            }
-
-        // ����� ��������
-        changeBackground();
-    
