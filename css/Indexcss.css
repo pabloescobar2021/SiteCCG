@@ -327,7 +327,11 @@ form {
         width: 90%;
     }
 }
+    .Usltxt {text-align: center; color:white ;font-size:40px;font-family: Arial, sans-serif; font-weight:bold;line-height: 1.55;}
+    .ContUsl .Ustxtunder {text-align:center; color:white ;font-size:20px;;font-weight:200;line-height: 1.55;              }      
+    .ContUsl {max-width:1200px;width:auto ; align-items:center; margin:auto;   }
 
+    @media (max-width: 1200px) {.ContUsl .Ustxtunder{font-size: 15px;text-align: left; margin: 0 auto; } }
 
 
 
@@ -365,7 +369,7 @@ form {
     width: 100%;
     margin:auto ;
 }  
-            @media (max-width:1200px) {.intoG {margin:auto;   }  }
+            @media (max-width:1200px) {.intoG {margin:auto;gap: 5px;   }  }
 
             /* @media (max-width: 767px) {
                 .intoG {
@@ -381,6 +385,7 @@ form {
     color: white;
     padding: 20px;
 }
+@media (max-width:1200px)  {.intoI{font-size: 12px;padding: 10px; }  }  
 
     .intoI img {
         width: 50px;
@@ -466,7 +471,7 @@ form {
         gap: 10px;   
     }
                 @media (max-width:1200px) {
-                    .Con_Vid_ob{ display:block;}                
+                    .Con_Vid_ob{ display:block ;}                
                     .Usltxt h1 {font-size: 30px;font-weight: 600;margin-top: 60px; margin-bottom: -20px;}
                 }
         .Con_Vid_ob img {
@@ -481,7 +486,6 @@ form {
     .left-part, .right-part {
         display: flex;
         flex-wrap: wrap;
-        
     }
     .left-part .horizontal1 {
         width: 100%; /* ����������� �� ���� ������ ����� ����� */
@@ -499,7 +503,7 @@ form {
         text-decoration: none; /* ������� ������������� */
         position: relative;
         overflow:hidden;
-    }
+    } @media (max-width:1200px) {.aimg {width: 100%;}}
 
     .a1img, .aRightimg, .a1Rightimg {
         display: inline-block; /* ������ ����������� ������������� */
@@ -507,10 +511,8 @@ form {
         text-decoration: none; /* ������� ������������� */
         position: relative;
         overflow: hidden;
-    }
-            @media (max-width:1200px) {.aRightimg{ /* ��������� � ������� ����. �� �������� */
-                width:50%;
-                                       } }
+    }       @media (max-width:1200px) {.a1img, .aRightimg, .a1Rightimg {width: 100%;}}
+           
 
     .aimg img {
         display: block; /* ����� ����������� �� �������� ����� */
@@ -526,6 +528,8 @@ form {
         font-size: 30px;
     }
         
+    .h1MCNCVO {display: block ;font-family: "Montserrat", sans-serif; color: white;font-size: 30px;font-weight: 600;text-align: center;
+        margin-top:50px;margin-bottom: 20px;}
 
         /* Этапы работы  */
 
