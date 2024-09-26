@@ -108,7 +108,7 @@
                                         #openModalBtn2:hover::after {
                                             opacity: 1; /* ��� ��������� �� ������ ������ ������������� ������� */
                                         }
-                                     .MenuBut{font-family: "Montserrat", sans-serif; font-weight:400; margin:30px ;
+                                     .MenuBut{font-family: "Montserrat", sans-serif; font-weight:500; margin:30px; font-size: 16px; letter-spacing: 1px ;
                                      }
                                      
     .mobile-menu a {
