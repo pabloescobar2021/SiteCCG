@@ -223,19 +223,40 @@ document.getElementById("form1").addEventListener("submit", function(event) {
 
 
      // Получаем элементы
-     const ulsbutmenu = document.getElementById('ulsbutmenu');
-     const uslmenuid = document.getElementById('uslmenuid');
+    //  const ulsbutmenu = document.getElementById('ulsbutmenu');
+    //  const uslmenuid = document.getElementById('uslmenuid');
 
-     // Обрабатываем клик по ссылке "Услуги"
-     ulsbutmenu.addEventListener('click', function(event) {
-         event.preventDefault(); // Предотвращаем переход по ссылке
-         // Показываем или скрываем окно с ссылками
-         uslmenuid.style.display = uslmenuid.style.display === 'block' ? 'none' : 'block';
-     });
+    //  // Обрабатываем клик по ссылке "Услуги"
+    //  ulsbutmenu.addEventListener('click', function(event) {
+    //      event.preventDefault(); // Предотвращаем переход по ссылке
+    //      // Показываем или скрываем окно с ссылками
+    //      uslmenuid.style.display = uslmenuid.style.display === 'block' ? 'none' : 'block';
+    //  });
 
-     // Закрываем всплывающее окно при клике вне его
-     document.addEventListener('click', function(event) {
-         if (!ulsbutmenu.contains(event.target) && !uslmenuid.contains(event.target)) {
-             uslmenuid.style.display = 'none';
-         }
-     });
+    //  // Закрываем всплывающее окно при клике вне его
+    //  document.addEventListener('click', function(event) {
+    //      if (!ulsbutmenu.contains(event.target) && !uslmenuid.contains(event.target)) {
+    //          uslmenuid.style.display = 'none';
+    //      }
+    //  });
+    const ulsbutmenu = document.getElementById('ulsbutmenu');
+const uslmenuid = document.getElementById('uslmenuid');
+
+// Показываем окно с ссылками при наведении на "Услуги"
+ulsbutmenu.addEventListener('mouseenter', function() {
+    uslmenuid.style.display = 'block';
+});
+
+// Скрываем окно с ссылками, когда курсор покидает "Услуги" или само меню
+ulsbutmenu.addEventListener('mouseleave', function(event) {
+    // Задержка, чтобы избежать резкого исчезновения, если пользователь навел на меню
+    setTimeout(function() {
+        if (!uslmenuid.matches(':hover')) {
+            uslmenuid.style.display = 'none';
+        }
+    }, 200);
+});
+
+uslmenuid.addEventListener('mouseleave', function() {
+    uslmenuid.style.display = 'none';
+});
