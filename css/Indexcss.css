@@ -70,7 +70,7 @@
     
 .logo { width: auto; height: 70px;position: absolute;left: 20px  ;}
 .address_1 {font-size:10px ;color:rgb(255, 255, 255);font-family:
-     'Arial', sans-serif; text-align: center;position: absolute; left: 100px; }    
+     'Arial', sans-serif; text-align: left;position: absolute; left: 100px; }    
 
 .a_nav1 {text-align: center;flex-grow: 1;  }
 /* .a_nav1 a:not(:last-child)::after{content: "|"; margin-left: 30px; } */
@@ -782,7 +782,7 @@ form {
     .KnopkaUsl {
         flex: 1 1 30%;
         width:100%;
-        height: 500px;
+        height: 450px;
         overflow:hidden;
         position: relative;
     }
