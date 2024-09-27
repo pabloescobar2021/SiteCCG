@@ -241,10 +241,11 @@ document.getElementById("form1").addEventListener("submit", function(event) {
     //  });
     const ulsbutmenu = document.getElementById('ulsbutmenu');
 const uslmenuid = document.getElementById('uslmenuid');
-
+const triangle =document.querySelector('.triangle')  ;
 // Показываем окно с ссылками при наведении на "Услуги"
 ulsbutmenu.addEventListener('mouseenter', function() {
     uslmenuid.style.display = 'block';
+    triangle.style.transform = 'rotate(120deg)';
 });
 
 // Скрываем окно с ссылками, когда курсор покидает "Услуги" или само меню
@@ -253,10 +254,13 @@ ulsbutmenu.addEventListener('mouseleave', function(event) {
     setTimeout(function() {
         if (!uslmenuid.matches(':hover')) {
             uslmenuid.style.display = 'none';
+            triangle.style.transform = 'rotate(300deg)'
         }
+        
     }, 200);
 });
 
 uslmenuid.addEventListener('mouseleave', function() {
     uslmenuid.style.display = 'none';
+    triangle.style.transform = 'rotate(300deg)';
 });

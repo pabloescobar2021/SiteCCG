@@ -8,12 +8,12 @@
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 7px solid white;
-    transform: rotate(300deg);
+     transform: rotate(300deg); 
     transition: transform 0.5s ease; /* Анимация поворота */
 }
 /* Поворот треугольника при наведении на ссылку "Услуги" */
 #ulsbutmenu:hover .triangle {
-    transform: rotate(120deg);
+    /* transform: rotate(120deg); */
 }
 
 
@@ -134,7 +134,7 @@
     color: #000;
     text-align: center;
  }
- .uslmenu a:hover { border-bottom-color: #45a049; color: #45a049;}
+ .uslmenu a:hover { border-bottom-color: #45a049; color: #592a2a; font-weight: 500;}
 
 
 
