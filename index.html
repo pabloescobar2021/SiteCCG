@@ -18,96 +18,30 @@
     <link rel="preload" href="css/Indexcss.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/Indexcss.css"></noscript>
 
-
-
-
-    <style>
-        .container {
-        }
-
-        .underline-half {
-            width: 70%;
-            height: 0.5px;
-            background-color: red; /* Синий цвет подчеркивания */
-            margin: 0 auto;
-            position: relative;
-            top: 50px;
-        }
-    </style>
-    <style>
-        /* <!-- увеличение изображения при наведении --> */
-        .logo {
-            transition: transform 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.1);
-        }
-    </style>
-    <script>
-        function copyText() {
-            // Получаем элемент с текстом
-            var text = document.getElementById("copyText").innerText;
-
-            // Создаем временный элемент <textarea> для копирования
-            var tempInput = document.createElement("textarea");
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-
-            // Показываем уведомление о копировании
-            alert("Текст скопирован: " + text);
-        }
-    </script>
-    <!-- Изображение-->
-    <style>
-        .styled-image {
-            width: 100%;
-            max-width: 550px;
-            height: auto;
-            max-height: 550px;
-            object-fit: cover;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 2, 0.2);
-            transition: opacity 0.9s ease;
-            margin-top: 20px;
-        }
-
-            .styled-image:hover {
-                opacity: 0.8;
-            }
-    </style>
-    <style>
-        /* Flexbox по умолчанию */
-        .flexoff {
-            display: flex;
-        }
-
-        /* Отключение Flexbox  */
-        @media (max-width: 767px) {
-            .flexoff {
-                display: block;
-            }
-        }
-    </style>
+     
+    
+    
 </head>
 
 <body style="background-color: #363430; background-position: center;" class="">
 
 
-    <nav class="" style="background-color: #434343; ">
+    
 
+    <nav class="" style="background-color: #434343; ">
         <nav class="nav-menu " style="background-color: #897F79 ">
-            <div class="flex items-center">
-               <a href="index.html"> <img src="img/logo1.png" alt="Logo" class="logo h-20 mr-4"></a> 
-                <div class="nav-links items-center " >
-                    <a class="" style="font-size:10px ;color:white;font-family: 'Arial', sans-serif; ">Сочи, ул.Донская, 9-а <br /> 8999 171-89-51, da@mail.ru</a>
+            <div class="div-menu">
+               
+                <div class="nav-links  " >
+                    <img src="img/logo1.png" alt="Logo" class="logo ">
+                    <span class="address_1" >Сочи, ул.Донская, 9-а <br>8999 171-89-51,<br> da@mail.ru</span>
+                    <div class="a_nav1">
                     <a href="glavnoe.html"style="" class="MenuBut text-white hover:text-yellow-500 ">О НАС</a>
                     <a href="" class="MenuBut text-white hover:text-yellow-500">ПРОЕКТЫ </a>
                     <a href="" class=" MenuBut text-white hover:text-yellow-500 uslugbat" id="ulsbutmenu">УСЛУГИ  </a>
                     <a href="#" class="MenuBut text-white hover:text-yellow-500">КОНТАКТЫ</a>
+                    </div>
+                    <button id="openModalBtn2" class="text-white montserrat-1">Написать нам</button>
                 </div>
                 <div class="hamburger" onclick="toggleMenu()">
                     <div></div>
@@ -127,9 +61,7 @@
 
 
 
-            <div class="verx " style="text-align:center; ">
-                <button id="openModalBtn2" style=" " class="text-white montserrat-1">Написать нам</button>
-            </div>
+            
         </nav>
 
         <div class="mobile-menu" id="mobileMenu">
@@ -139,15 +71,7 @@
             <a href="#" class="Nav_ccilki text-white hover:text-yellow-500">КОНТАКТЫ</a>
         </div>
         <style>
-            .verx {
-                font-size: 15px;
-            }
-
-            @media (max-width: 767px) {
-                .verx {
-                    font-size: 12px;
-                }
-            }
+            
 
             .address1 {
                 position: absolute;
@@ -184,8 +108,8 @@
         <div class="flex">
             <div class="intoG" style="font-family: 'Arial', sans-serif; margin-top: 40px ">
                 <div class=" intoI    "><img style="filter: brightness(0) invert(1);" src="img/house1.png" alt=""><span>Загородные <br /> дома</span></div>
-                <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="img/apartment.png" alt=""><span>Частные<br />квартиры</span></div>
                 <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="img/manufacturing.png" alt=""><span>Промышленные<br /> объекты</span></div>
+                <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="img/apartment.png" alt=""><span>Частные<br />квартиры</span></div>
                 <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="img/coffee-shop.png" alt=""><span>Коммерческие<br /> предприятия</span></div>
 
             </div>
@@ -241,41 +165,8 @@
 
         </div>
         <style> 
-                .Pnafoto {position: absolute; margin: 0 auto;text-align: center ;z-index: 2; display: inline-block;
-                left: 0; right: 0; bottom: 0; top: 45%; color: aliceblue;
-                font-family: "Montserrat", sans-serif; font-size: 23px; font-weight: 600;letter-spacing: -1px; text-transform: uppercase;
-                }
-                .Podrob_but {position: absolute; margin: 0 auto;text-align: center ;z-index: 3; display: inline-block;
-                left: 0; right: 0; bottom: 0; top: 70%; color: aliceblue;font-size: 23px;font-family: "Montserrat", sans-serif;
-                width: 150px;height: 40px; ;background-color: #867249; border-radius:  5px; opacity: 0;
-                transition: opacity 0.3s ease ;
-                }
                 
-                .KnopkaUsl {
-                    flex: 1 1 30%;
-                    width:100%;
-                    height: 500px;
-                    overflow:hidden;
-                    position: relative;
-                }
-                @media (max-width:1200px) {.KnopkaUsl{flex: none; } }
-                .KnopkaUsl:hover img{
-                    transform:scale(1.04)
-                }
-                .KnopkaUsl:hover .Podrob_but {display:block;opacity: 1; }
-                .KnopkaUsl img {
-                        max-width: 100%;
-                        width: 100%;
-                        height: 100%;
-                        object-fit:cover;
-                        box-sizing: border-box;
-                        transition: transform 0.3s ease;
-                        filter: brightness(65%);
-                    }
-
-
-            .ContainerSecond {  flex-wrap: wrap;gap: 2px; }
-            .ContainerSecond img {}
+            
         </style>
     </div> 
     <div class="div_12" style="width: 70%; height: 0.3px; background-color: red;margin: 0 auto; position: relative; bottom: 0px; "> </div>
