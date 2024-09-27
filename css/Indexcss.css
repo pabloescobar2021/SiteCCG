@@ -24,6 +24,25 @@
 }
 
 
+.gradient-background {
+    background: linear-gradient(45deg, #000000, #82655a5b); /* Начальный градиент */
+    background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+    animation: gradient-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%; /* Начальная позиция */
+    }
+    50% {
+      background-position: 100% 50%; /* В середине */
+    }
+    100% {
+      background-position: 0% 50%; /* Возврат к началу */
+    }
+  }
+
+
 
 
 
@@ -409,10 +428,12 @@ form {
     .modal-content {
         width: 90%;
     }
-}
-    .Usltxt {text-align: center; color:white ;font-size:40px;font-family: Arial, sans-serif; font-weight:bold;line-height: 1.55;}
-    .ContUsl .Ustxtunder {text-align:center; color:white ;font-size:20px;;font-weight:200;line-height: 1.55;              }      
-    .ContUsl {max-width:1200px;width:auto ; align-items:center; margin:auto;   }
+}   
+    .d222 {background-color: #82655a5b; display: flex;}
+    .d234 {margin: 0 auto;  }
+    .Usltxt {text-align: center; color:white ;font-size:40px;font-family: Arial, sans-serif; font-weight:bold;line-height: 1.55;margin-top: 60px;margin-bottom: 20px; } 
+         
+    .ContUsl {max-width:100%;width:auto ; align-items:center; margin: 0 auto; }
 
     @media (max-width: 1200px) {.ContUsl .Ustxtunder{display: none;} }
 
@@ -814,3 +835,20 @@ form {
     .Podrob_but{position: absolute;top: 10%; }
 
 }
+
+
+
+.z231 { margin-top: 100px;}
+.z2334{
+    position: relative; 
+    width: 100%;
+    margin: 0 auto; 
+    background-color: #ff000000;
+    height: 1000px; 
+    display: flex;
+}
+
+.span111{
+    display:inline-block;font-family: Arial, sans-serif; font-size: 40px; 
+    font-weight: bold;color: white;
+    text-align: center; margin: 0 auto;}
