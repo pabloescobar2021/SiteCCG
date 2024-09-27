@@ -1,3 +1,10 @@
+/* box-shadow: 0 3px 10px rgba(0,0,0,0.2); font-family: "Montserrat", sans-serif;transition: opacity 0.4s ease-in-out; 
+
+  */
+
+
+
+
 
 /* Стили для треугольника */
 .triangle {
@@ -75,12 +82,13 @@
 .a_nav1 {text-align: center;flex-grow: 1;  }
 /* .a_nav1 a:not(:last-child)::after{content: "|"; margin-left: 30px; } */
     
-.MenuBut{font-family: "Montserrat", sans-serif;z-index: 70; font-weight:400; padding: 0 50px;min-width: 10%;width: auto; -webkit-border-radius: 5px;
-    font-size: 15px; letter-spacing: 1px;background-color: #00000053;display: inline-block; 
-    height: 30px;padding-top: 5px;position: relative; }        
+.MenuBut{font-family: "Montserrat", sans-serif;z-index: 70; font-weight:300;;width: 120px; -webkit-border-radius: 15px;
+    font-size: 15px; letter-spacing: 0px;background-color: #00000053;display: inline-block; 
+    height: 30px;padding-top: 5px;position: relative;box-shadow: 0 3px 10px rgba(0,0,0,0.2); }        
     .MenuBut:hover{opacity: 1;}
+    .MenuBut:active{transform: scale(0.99); }
     .MenuBut::after {content:' ';z-index: -25;;position: absolute; top: 0;left: 0;bottom: 0;right: 0; width: 100%;height: 100%;opacity: 0;
-        ;background-image:linear-gradient(0.015turn, #0000006c 0%, #000000 100%); -webkit-border-radius: 5px;transition: opacity 0.4s ease-in-out;  }
+        ;background-image:linear-gradient(0.015turn, #0000006c 0%, #000000 100%); -webkit-border-radius: 15px;transition: opacity 0.4s ease-in-out;  }
     .MenuBut:hover::after{opacity: 1;}
     /* flex-grow: 1;  Растягивается, чтобы занять всю ширину между логотипом и фразой справа 
     margin: 0 100px; Создаёт отступы между логотипом и правой фразой */
@@ -118,7 +126,7 @@
     position: absolute;
     display: none;
     top: 100%; /* Можно изменить для нужного позиционирования */
-    left: 50%;
+    left: 45%;
     background-color: #897F79; -webkit-border-radius: 10px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -144,24 +152,24 @@
                                     font-family: "Montserrat", sans-serif;
                                     cursor: pointer;
                                     display: inline-block;
-                                    position:absolute;
-                                    right: 20px;
+                                    position:relative;
+                                    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
                                     transition: transform 0.2s ease, box-shadow 0.2s ease;
                                     color: white;
-                                    border-color:black; border-width: 0.1px; -webkit-border-radius: 5px; border-radius: 5px;
-                                    font-size:15px ;
-                                    width: 190px;
-                                    height: 35px; font-weight:400;
-                                    background-color:#00000053;letter-spacing: 1px;
+                                    border-radius: 5px; -webkit-border-radius: 15px; 
+                                    font-size:15px ; letter-spacing: 0px;
+                                    width: 200px; font-weight: 300; margin-left: 10px;
+                                    height: 45px; 
+                                    background-color:#eb0000d5;
                                 /*    background-image: linear-gradient(0.800turn, rgba(107, 112, 92, 1) 0%, rgba(203, 153, 126, 1) 100%);*/
-                                    overflow:hidden;
+                                    
                                     
                                     
                                                     }
                                         #openModalBtn2:hover {
-                                            transform: scale(1.05);
-                                            
+                                            transform: scale(1.05); 
                                         }
+                                        #openModalBtn2:active{transform: scale(1); }
                                         /*�������� ��� �������*/
                                         #openModalBtn2::after {
                                             content: ' ';
@@ -173,10 +181,10 @@
                                             z-index: -1;
                                             width: 100%;
                                             height: 100%;
-                                            border-radius:7px;
+                                            border-radius:5px; -webkit-border-radius: 15px;
                                             opacity: 0;
                                             transition: opacity 0.2s ease-in-out;
-                                            background-image: linear-gradient(0.015turn, #0000006c 0%, #000000 100%);
+                                            background-image: linear-gradient(0.015turn, #0000006c 0%, w#ff0000 100%);
                                         }
 
                                         #openModalBtn2:hover::after {
