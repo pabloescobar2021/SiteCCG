@@ -466,12 +466,17 @@ form {
     
     
 }
-.scrollto1 {
-    position: absolute; left: 0;right: 0; top: 150%; margin: 0 auto; align-items: center;justify-content: center;
+.scrollto1{
+    position: relative; left: 0;right: 0; top: 0; margin: 0 auto; align-items: center;justify-content: center;
     background-color: white;width: 100px; height: 100px; border-radius: 50%; color:white; font-size: 17px; 
-    display: flex; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    display: flex; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);margin-top: 200px;
+}
+@media (max-width:1200px) {
+    .scrollto1 {display: none;}
+    
 }
 .scrollto1:active{transform: scale(1.05)};
+
 
 
 
@@ -533,7 +538,10 @@ form {
     .intoI img {width: 30px; }
 }  
 
+@media (max-width:1200px) {
+    .scrollto1 {display: none;}
     
+}
 
 .But_Zayav {
     font-family: 'Arial', sans-serif;
@@ -882,10 +890,18 @@ form {
 .z2{display: flex; }
 
 .z3{
-    display: flex;width: 300px;height: auto; margin: 0 auto;
+    width: 100%;height: auto; margin: 0 auto; ;
 }
 .imgcont1 {
-    object-fit: cover;display: flex ; align-items: center; justify-content: center; gap: 20px; filter: brightness(60%);
+    display: flex ; width: 70%;
+    align-items: center; justify-content: center; gap: 20px; filter: brightness(60%); margin: 0 auto; 
+}
+.imgcont1 img {object-fit: cover; width: 300px; }
+@media (max-width:1200px) {
+    .z3 {flex-wrap: wrap; overflow: hidden;}
+    .imgcont1 {flex-wrap: wrap}
+    .imgcont1 img {flex:1 1 30%; width: 100px; }
+    
 }
 
 

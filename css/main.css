@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .gradient_all {
   background: rgb(138, 95, 46);
-  background: linear-gradient(90deg, #ff7e5f 0%, #834f42 31%, #897e7b 73%, #46190e 98%);
+  background: linear-gradient(90deg, #ea1616 0%, #834f42 31%, #897e7b 73%, #46190e 98%);
   background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
   animation: grad_all-animation 10s ease infinite; /* Анимация длительностью 10 секунд */
   opacity: 1;
