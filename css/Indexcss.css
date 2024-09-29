@@ -471,7 +471,7 @@ form {
     background-color: white;width: 100px; height: 100px; border-radius: 50%; color:white; font-size: 17px; 
     display: flex; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);margin-top: 200px;
 }
-@media (max-width:1200px) {
+@media (max-width:770px) {
     .scrollto1 {display: none;}
     
 }
@@ -538,10 +538,7 @@ form {
     .intoI img {width: 30px; }
 }  
 
-@media (max-width:1200px) {
-    .scrollto1 {display: none;}
-    
-}
+
 
 .But_Zayav {
     font-family: 'Arial', sans-serif;
