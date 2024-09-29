@@ -1,0 +1,32 @@
+$gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41,0.9) 73%, rgba(6,5,3,0.9) 98%  ;
+
+
+@mixin grad_all($anim_s, $color1, $color2, $color3, $color4 ) {
+    
+    background: rgb(138,95,46);
+    background: linear-gradient(90deg,
+    ($color1) 0%,
+    ($color2) 31%,
+    ($color3) 73%,
+    ($color4) 98%);    
+    background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+    animation: grad_all-animation $anim_s ease infinite; /* Анимация длительностью 10 секунд */
+    opacity: 1; 
+       
+}
+.gradient_all {
+    @include grad_all(10s, #ff7e5f, #834f42, #897e7b, #46190e );
+}
+
+
+@keyframes grad_all-animation {
+    0% {
+      background-position: 0% 50%; /* Начальная позиция */
+    }
+    50% {
+      background-position: 100% 50%; /* В середине */
+    }
+    100% {
+      background-position: 0% 50%; /* Возврат к началу */
+    }
+}

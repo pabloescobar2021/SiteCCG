@@ -23,11 +23,16 @@
     /* transform: rotate(120deg); */
 }
 
-
+  /* Градиент */
 .gradient-background {
-    background: linear-gradient(45deg, #000000, #82655a5b); /* Начальный градиент */
-    background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
-    animation: gradient-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+    background: rgb(138,95,46);
+    background: linear-gradient(90deg,
+    rgba(64, 59, 52, 0.9) 0%,
+    rgba(66, 53, 38, 0.9) 31%,
+    rgba(62, 52, 33, 0.9) 73%,
+    rgba(0, 0, 0, 0.9) 98%);    background-size: 500% ; /* Увеличение размера градиента для плавной анимации */
+    animation: gradient-animation 10s ease infinite; /* Анимация длительностью 10 секунд */
+    opacity: 1; 
   }
   
   @keyframes gradient-animation {
@@ -41,7 +46,17 @@
       background-position: 0% 50%; /* Возврат к началу */
     }
   }
-
+  
+  .borderAnim {
+    
+    /* animation: krug 1s ease infinite; */
+  }
+  @keyframes krug {
+   0% { } 
+   25% {  } 
+   50% {  } 
+   90% {  } 
+  }
 
 
 
@@ -150,18 +165,19 @@
     padding: 15px;
     border: 1px solid #ddd;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    width: 10%;
-    font-family: "Montserrat", sans-serif;
+    width: 15%; height: auto;
+    font-family: "Montserrat", sans-serif; font-weight: 400;
     
 }
 .uslmenu a {
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
     color: #000;
-    text-align: center;
+    text-align: left; 
  }
- .uslmenu a:hover { border-bottom-color: #45a049; color: #592a2a; font-weight: 500;}
+ .uslmenu a:nth-child(n+3) {margin-top: 10px;}
+ .uslmenu a:hover { border-bottom-color: #45a049; color: #ffffff; font-weight: 500;}
 
 
 
@@ -278,7 +294,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
     border: none;
     padding: 10px;
@@ -308,7 +324,7 @@
     background-color: white;
     border-radius: 50%;
     margin: 0 5px;
-    opacity: 0.5;
+    opacity: 0.9;
     transition: opacity 0.3s;
 }
 
@@ -343,7 +359,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* �������������� ��� */
+    background-color: rgba(0, 0, 0, 0.9); /* �������������� ��� */
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -429,7 +445,7 @@ form {
         width: 90%;
     }
 }   
-    .d222 {background-color: #82655a5b; display: flex;}
+    .d222 {background-color: #37312f5b; display: flex;}
     .d234 {margin: 0 auto;  }
     .Usltxt {text-align: center; color:white ;font-size:40px;font-family: Arial, sans-serif; font-weight:bold;line-height: 1.55;margin-top: 60px;margin-bottom: 20px; } 
          
@@ -447,8 +463,19 @@ form {
     background-size: cover;
     background-position: center;
     /*  background-position-x:-600px; */
-    height: 600px
+    
+    
 }
+.scrollto1 {
+    position: absolute; left: 0;right: 0; top: 150%; margin: 0 auto; align-items: center;justify-content: center;
+    background-color: white;width: 100px; height: 100px; border-radius: 50%; color:white; font-size: 17px; 
+    display: flex; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.scrollto1:active{transform: scale(1.05)};
+
+
+
+
 .mainT {font-family: Arial, sans-serif; font-weight:bold}
 .mainT, .subT {
     margin: 0;
@@ -548,7 +575,7 @@ form {
         left: 5px;
         right: 5px;
         bottom: 5px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.5) 60%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.9) 60%);
         pointer-events: none; /* ��������� ������ ��������� � ����������� */
         transition: transform 0.9s ease, opacity 0.9s ease;
         opacity: 50%;
@@ -838,17 +865,30 @@ form {
 
 
 
-.z231 { margin-top: 100px;}
+
 .z2334{
     position: relative; 
     width: 100%;
     margin: 0 auto; 
     background-color: #ff000000;
-    height: 1000px; 
-    display: flex;
+    height: auto; 
+    
 }
-
 .span111{
     display:inline-block;font-family: Arial, sans-serif; font-size: 40px; 
     font-weight: bold;color: white;
     text-align: center; margin: 0 auto;}
+
+.z2{display: flex; }
+
+.z3{
+    display: flex;width: 300px;height: auto; margin: 0 auto;
+}
+.imgcont1 {
+    object-fit: cover;display: flex ; align-items: center; justify-content: center; gap: 20px; filter: brightness(60%);
+}
+
+
+
+
+    
