@@ -469,18 +469,60 @@ form {
     
 }
 .scrollto1{
-    position: relative; left: 0;right: 0; top: 0; margin: 0 auto; align-items: center;justify-content: center;
-    background-color: white;width: 100px; height: 100px; border-radius: 50%; color:white; font-size: 17px; 
-    display: flex; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,0.2);margin-top: 200px;
+    position: absolute;margin: 0 auto; align-items: center;justify-content: center;
+    background-color: none;width: 100%; height: 50px; border-radius: 0%; color:white; 
+    font-size: 17px; display: flex; cursor: pointer; display: flex;
+    bottom: 0;left: 0; right: 0;opacity: 0.9; font-size: 50px; 
 }
+
 @media (max-width:770px) {
     .scrollto1 {display: none;}
-    
 }
-.scrollto1:active{transform: scale(1.05)};
 
+.scrollto1:active{transform: scale(1.05)}
 
+.triag_per {
+    font-size: 40px;
+}
 
+.testtr {
+    width: 450px; /* Ширина контейнера */
+    height: 30px; /* Высота контейнера */
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* Создание треугольника */
+    position: relative; /* Для позиционирования */
+    overflow: hidden;
+    opacity: 0.9;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.testtr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+    rgba(255, 0, 0, 0.9) 0%, 
+    rgba(177, 2, 2, 0.9) 31%, 
+    rgba(94, 1, 1, 0.9) 73%, 
+    rgba(165, 139, 139, 0.9) 98%);
+    background-size: 400% 400%; 
+    animation: gradient-animation 10s ease infinite; 
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Начальная позиция */
+    }
+    50% {
+        background-position: 100% 50%; /* В середине */
+    }
+    100% {
+        background-position: 0% 50%; /* Возврат к началу */
+    }
+}
+  
 
 
 .mainT {font-family: Arial, sans-serif; font-weight:bold}

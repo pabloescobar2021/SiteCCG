@@ -7,7 +7,28 @@
   opacity: 1;
 }
 
+.grad_but_hov {
+  background: linear-gradient(90deg, #ea1616 0%, #834f42 31%, #897e7b 73%, #46190e 98%);
+  background-size: 300% 300%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad22 15s ease infinite; /* Анимация длительностью 10 секунд */
+  transition: background 1.5s ease;
+  width: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
 @keyframes grad_all-animation {
+  0% {
+    background-position: 0% 50%; /* Начальная позиция */
+  }
+  50% {
+    background-position: 100% 50%; /* В середине */
+  }
+  100% {
+    background-position: 0% 50%; /* Возврат к началу */
+  }
+}
+@keyframes grad22 {
   0% {
     background-position: 0% 50%; /* Начальная позиция */
   }
