@@ -108,9 +108,11 @@ sass --watch scss/main.scss:css/main.css
     justify-content: center;
     position: relative;
 }     
-    
+.logommdiv {width: 100%; display: flex; align-items: center; justify-content: center; margin: 0 auto;height: auto;}  
 .logo { width: auto; height: 70px;position: absolute;left: 20px  ;}
-.logoMM { width: auto; height: 70px;position: relative; left:0;display: none; }
+.logoMM { width: 100px; height: 50px;position: absolute;display: none;
+left: 60px;top: 0;
+}
 .address_1 {font-size:10px ;color:rgb(255, 255, 255);font-family:
      'Arial', sans-serif; text-align: left;position: absolute; left: 150px; }    
 
@@ -129,6 +131,7 @@ sass --watch scss/main.scss:css/main.css
     margin: 0 100px; Создаёт отступы между логотипом и правой фразой */
 
 .hamburger {
+    position: absolute; left: 20px;
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -931,13 +934,13 @@ form {
 .z2{display: flex; }
 
 .z3{
-    width: 100%;height: auto; margin: 0 auto; ;
+    width: 100%;height: auto; margin: 0 auto; overflow: hidden;
 }
 .imgcont1 {
     display: flex ; width: 70%;
     align-items: center; justify-content: center; gap: 20px; filter: brightness(60%); margin: 0 auto; 
 }
-.imgcont1 img {object-fit: cover; width: 300px; }
+.imgcont1 img {object-fit: cover; width: 250px; }
 @media (max-width:1200px) {
     .z3 {flex-wrap: wrap; overflow: hidden;}
     .imgcont1 {flex-wrap: wrap}
