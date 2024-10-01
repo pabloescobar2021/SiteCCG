@@ -266,3 +266,36 @@ uslmenuid.addEventListener('mouseleave', function() {
     uslmenuid.style.display = 'none';
     triangle.style.transform = 'rotate(300deg)';
 });
+
+
+
+
+// Получаем модальное окно, контейнер для галерей и кнопку закрытия
+const modalkond = document.getElementById("Modalkond");
+const modalGallerykond = document.getElementById("modalgallery");
+const closeModalkond = document.getElementsByClassName("closekond")[0];
+
+// Получаем все кнопки, которые открывают модальное окно
+const openModalBtnskond = document.querySelectorAll(".btext_1");
+
+// Открываем модальное окно с нужной галереей
+openModalBtnskond.forEach((button) => {
+    button.addEventListener("click", function() {
+        const targetGallery = this.getAttribute("data-target"); // Получаем целевую галерею
+        const galleryContent = document.getElementById(targetGallery).innerHTML; // Получаем HTML галереи
+        modalGallerykond.innerHTML = galleryContent; // Вставляем галерею в модальное окно
+        modalkond.style.display = "block"; // Показываем модальное окно
+    });
+});
+
+// Закрытие модального окна
+closeModalkond.onclick = function() {
+    modalkond.style.display = "none";
+};
+
+// Закрытие модального окна при клике вне его
+window.onclick = function(event) {
+    if (event.target === modalkond) {
+        modalkond.style.display = "none";
+    }
+};
