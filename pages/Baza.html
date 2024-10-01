@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- обновление страницы  -->
     <meta http-equiv="refresh" content="">
-    <title>kond</title>
+    <title>baza</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,40 +14,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="../css/Indexcss.css" rel="stylesheet">
-    <link rel="preload" href="../css/Indexcss.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="../css/baza.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="../css/Indexcss.css"></noscript>
-    <noscript><link rel="stylesheet" href="../css/baza.css"></noscript>
+    <link href="../css/all_nekond_negaz.css" rel="stylesheet">
+    <link rel="preload" href="../css/all_nekond_negaz.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../css/all_nekond_negaz.css"></noscript>
+    <link rel="stylesheet" href="../css/main.css">
 
-    <style>
-        .underline-half {width: 70%;height: 0.5px;background-color: red; /* Синий цвет подчеркивания */margin: 0 auto;position: relative;top: 50px;}
-    </style>
+    
    
     
 </head>
 <body style="background-color: #363430; background-position: center;" class="">
-    <nav class="" style="background-color: #434343; ">
-        <nav class="nav-menu " style="background-color: #897F79 ">
-            <div class="flex items-center">
-                <a href="../index.html"> <img src="../img/logo1.png" alt="Logo" class="logo h-20 mr-4"></a> 
-                <div class="nav-links items-center " >
-                    <a class="" style="font-size:10px ;color:white;font-family: 'Arial', sans-serif; ">Сочи, ул.Донская, 9-а <br /> 8999 171-89-51, da@mail.ru</a>
+
+    <nav class="" >
+        <nav class="nav-menu gradient-background" >
+            <div class="div-menu">
+               
+                <div class="nav-links  " >
+                   <a class="logobut" href="../index.html"> <img src="../img/Vmake-1727715962.png" alt="Logo" class="logo" ></a>
+                    <span class="address_1" >Сочи, ул.Пластунская, 50/2, Офис 46-б 8-928-854-76-43, ooo.ssg88@mail.ru</span>
+                    <div class="a_nav1">
                     <a href="glavnoe.html"style="" class="MenuBut text-white hover:text-yellow-500 ">О НАС</a>
                     <a href="" class="MenuBut text-white hover:text-yellow-500">ПРОЕКТЫ </a>
-                    <a href="#" class=" MenuBut text-white hover:text-yellow-500">УСЛУГИ</a>
-                    <a href="#" class="MenuBut text-white hover:text-yellow-500">КОНТАКТЫ</a>         
+                    <a href="" class=" MenuBut text-white hover:text-yellow-500 uslugbat" id="ulsbutmenu" >УСЛУГИ <span class="triangle"></span ></a>
+                    <a href="#" class="MenuBut text-white hover:text-yellow-500">КОНТАКТЫ</a>
+                    <button id="openModalBtn2" class="text-white ">ОБСУДИТЬ ПРОЕКТ</button>
+                    </div> 
                 </div>
+                <div class=""><img src="../img/Vmake-1727715962.png" alt="Logo" class="logoMM"> </div>
                 <div class="hamburger" onclick="toggleMenu()">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
-            <div class="verx " style="text-align:center; ">
-                <button id="openModalBtn2"  class="text-white montserrat-1">Написать нам</button>
+
+            <div>
+                <div class="uslmenu" id="uslmenuid">   
+                    <a href="">Электромонтажные работы на коммерческих объектах  </a> <br>
+                    <a href="">Кондиционирование, вентиляция, пожаротушение    </a> <br>
+                    <a href="">газификация коммерческих объектов    </a> <br>
+                    <a href="">кровельные работы    </a> <br>
+                    <a href="">Отопление, водоснабжение и водоотведение коммерческих объектов </a> <br> 
+                    <a href="">монолитное строительно зданий    </a> <br>
+                    <a href="">строительно бетонных и установка композитных бассейнов    </a> <br>
+                    <a href="">Теплосети    </a> 
+                </div>
             </div>
+
+
+
+            
         </nav>
+
         <div class="mobile-menu" id="mobileMenu">
             <a href="main.html" class="Nav_ccilki text-white hover:text-yellow-500">О НАС</a>
             <a href="glavnoe.html" class="Nav_ccilki text-white hover:text-yellow-500">ПРОЕКТЫ</a>
@@ -55,29 +73,38 @@
             <a href="#" class="Nav_ccilki text-white hover:text-yellow-500">КОНТАКТЫ</a>
         </div>
         <style>
-            .verx {font-size: 15px;}
-            @media (max-width: 767px) {.verx {font-size: 12px;}}
-            @media (max-width: 1200px) {#openModalBtn2 {display: none;}}
+            
+
+            @media (max-width: 1200px) {
+                #openModalBtn2 {
+                    display: none;
+                }
+            }
         </style>
+
+
 
     </nav>
     <!--  UNDERLINE  -->
     <div class="underline-half" style=""></div>
     <!-- ТЕКСТ С ИСПОЛЬЗОВАНИЕМ GRID И КАРТИНКИ РЯДОМ С ТЕКСТОМ     -->
-    <div class="container_for_text gif-container" style="background-color: #434343; height:700px ">
-
+    <div class="container_for_text gif-container" >
+        
+        <div class="content_1">
         <div class="intoTxt" style="font-family: 'Arial', sans-serif; ">
-            <h1 class="mainT" style="color:white; font-size:35px; margin-top: 150px "> Инженерно-строительная компания FB  </h1>
-            <h2 class="subT" style="color: white; font-size: 15px;"> Сочи - Адлер </h2>
+            <h1 class="mainT" style="color:white; font-size:35px; margin-top: 150px "> Кондиционирование, вентиляция, пожаротушение  </h1>
+            <h2 class="subT" style="color: white; font-size: 15px;">Россия - Большое Сочи </h2>
+
         </div>
         <div class="flex">
             <div class="intoG" style="font-family: 'Arial', sans-serif; margin-top: 40px ">
                 <div class=" intoI    "><img style="filter: brightness(0) invert(1);" src="../img/house1.png" alt=""><span>Загородные <br /> дома</span></div>
-                <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="../img/apartment.png" alt=""><span>Частные<br />квартиры</span></div>
                 <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="../img/manufacturing.png" alt=""><span>Промышленные<br /> объекты</span></div>
+                <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="../img/apartment.png" alt=""><span>Частные<br />квартиры</span></div>
                 <div class="  intoI  "><img style="filter: brightness(0) invert(1);" src="../img/coffee-shop.png" alt=""><span>Коммерческие<br /> предприятия</span></div>
-
             </div>
+
+            
         </div>
 
         <!-- Кнопка открытия модального окна -->
@@ -96,28 +123,127 @@
                 </form>
             </div>
         </div>
+        </div>
+
+        <div class="scrollto1" id="scrollto1">
+            
+       </div> 
     </div>
         <div class="" style="width: 70%; height: 0.3px; background-color: red;margin: 0 auto; position: relative; bottom: 0px; "> </div>
-    <!-- -------------------------------- -->
 
+   
 
-
-    <div class="DivItapi" style="margin-top:40px;">
-        <div>
-            <h1 id="h1Itap" class="Usltxt" style="text-align:left; "> Этапы работы </h1>
-
-        </div>
-        
-        <div class="DivAll" style="margin-top:10px">
-
-            <div class="TxtItapi"> <p class="txt2" >Заявка на сайте</p> <p class="txt3">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >1.</p>   </div>
-            <div class="TxtItapi"> <p class="txt2" >Первичная консультация</p> <p class="txt3">Наш менеджер или инженер связывается <br> с вами и договаривается о встрече </p> <p class="TxtFon" >2.</p>   </div>
-            <div class="TxtItapi"> <p class="txt2" >Выезд на объект</p> <p class="txt3">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >3.</p>   </div>
-            <div class="TxtItapi"> <p class="txt2" >Расчет сметы <br /> и заключение договора</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >4.</p>   </div>
-            <div class="TxtItapi"> <p class="txt2" >Поставка <br /> и монтаж оборудования</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >5.</p>   </div>
-            <div class="TxtItapi"> <p class="txt2" >Гарантийный <br /> и пост-гарантийный сервис</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >6.</p>   </div>
+    
+    <div class="div_12" style="width: 70%; height: 0.3px; background-color: red;margin: 0 auto; position: relative; bottom: 0px; "> </div>
+    
+    <div class="d_kond">   
+        <a> <img src="../img/fdc281ff7f7811ef95650ad361d3e203.png" > <button class="btext_1" data-target="gallery1"></button> <p>Кондиционирование</p> </a>
+        <a> <img src="../img/400612027f7911ef8c41e64959f934a7.png" > <button class="btext_1" data-target="gallery2"></button><p>Вентиляция</p> </a>
+        <a> <img src="../img/8c1ea3a37f7911ef960f160f3f05b604.png" > <button class="btext_1" data-target="gallery3"></button> <p>Пожаротушение</p></a>
+    </div>
+    
+    <div id="Modalkond" class="modalkond">
+        <div class="modalcontentkond">
+            <span class="closekond">&times;</span>
+            <div id="modalgallery"></div>
         </div>
     </div>
+
+    <div id="gallery1" class="gallery" style="display: none;">
+        <img src="../img/grip1.JPG">
+        <img src="../img/grip1.JPG">
+        <img src="../img/grip1.JPG">
+    </div>
+    
+    <div id="gallery2" class="gallery" style="display: none;">
+        <img src="../img/grip1.JPG">
+        <img src="../img/ob2.png">
+        <img src="../img/grip1.JPG">
+    </div>
+
+    <div id="gallery3" class="gallery" style="display: none;">
+        <img src="../img/grip1.JPG">
+        <img src="../img/grip1.JPG">
+        <img src="../img/grip1.JPG">
+    </div>
+    
+
+
+    <div>
+                <div class="h1MCNCVO " >
+                        <h1 class="Usltxt"> Работаем на следующих обьектах: </h1>
+                </div>
+                <div class="Con_Vid_ob Ustxtunder">
+            <div class="left-part ">
+                <a href="#" class="a1img">
+                    <img src="../img/ob1.png" class="horizontal1" />
+                    <p class="NadpicNaPHoto1 " > Для кафе и ресторанов </p>
+                </a>
+                <a href="#" class="aimg">
+                    <img src="../img/ob2.png" class="small-p" />
+                    <p class="NadpicNaPHoto1" > Для цехов и производств </p>
+                </a>
+                <a href="#"class="aimg">
+                    <img src="../img/ob3.png" class="small-p" />
+                    <p class="NadpicNaPHoto1" > Для ТЦ и ТРК </p>
+                </a>
+            </div>
+            <div class="right-part">
+                <a href="#" class="a1Rightimg">
+                    <img src="../img/ob4.jpg" class="vertical1" id="jopas" />
+                    <p class="NadpicNaPHoto1" > Для жилых комплексов </p>
+                </a>
+            </div>
+            <div class="right-part">
+                <a href="#" class="aRightimg">
+                    <img src="../img/ob5.png" class="small-p" />
+                    <p class="NadpicNaPHoto1" > Паркинг </p>
+                </a>
+                <a href="#" class="aRightimg">
+                    <img src="../img/ob6.png" class="small-p" />
+                    <p class="NadpicNaPHoto1" > Для офисов </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <div class="DivItapi" style="margin-top:40px;">
+            <div class="DVITh1">
+                <h1 id="h1Itap" class="Usltxt " > Этапы работы </h1>
+
+            </div>
+            
+            <div class="DivAll" style="margin-top:10px">
+
+                <div class="TxtItapi"> <p class="txt2" >Заявка на сайте</p> <p class="txt3">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >1.</p>   </div>
+                <div class="TxtItapi"> <p class="txt2" >Первичная консультация</p> <p class="txt3">Наш менеджер или инженер связывается <br> с вами и договаривается о встрече </p> <p class="TxtFon" >2.</p>   </div>
+                <div class="TxtItapi"> <p class="txt2" >Выезд на объект</p> <p class="txt3">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >3.</p>   </div>
+                <div class="TxtItapi"> <p class="txt2" >Расчет сметы <br /> и заключение договора</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >4.</p>   </div>
+                <div class="TxtItapi"> <p class="txt2" >Поставка <br /> и монтаж оборудования</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >5.</p>   </div>
+                <div class="TxtItapi"> <p class="txt2" >Гарантийный <br /> и пост-гарантийный сервис</p> <p class="txt3 txt3_mar">Вы звоните по номеру 89991708960 <br> или оставляется заявку на сайте </p> <p class="TxtFon" >6.</p>   </div>
+            </div>
+        </div>
+
+
+    
+         <div class="z2334">
+            
+           <div class="z2"> <h1 class="span111">Документация  </h1> </div>
+            
+            <div class="z3">
+                  <div class="imgcont1"> 
+                    <img src="../img/75862.jpg ">
+                    <img src="../img/75862.jpg ">
+                    <img src="../img/75862.jpg ">
+                    <img src="../img/75862.jpg ">
+                    <img src="../img/75862.jpg ">
+                  </div>  
+            </div>
+
+         </div>
+   
+
+
 
 
         <div style="background-color:rgb(255, 255, 255);">
@@ -126,12 +252,12 @@
                     <div class="zxc123">
                     <h1 class="Usltxt"style="margin-top: 100px;margin-bottom: 50px;  " > СВЯЖИТЕСЬ С НАМИ, МЫ ОТВЕТИМ НА ВСЕ ИНТЕРЕСУЮЩИЕ ВОПРОСЫ</h1>
                     <span style="font-weight: 600;"> Позвоните или напишите нам: </span>
-                    <p> asdadsads@mail.ru </p>
-                    <p> +7 (926) 953-06-60 </p>
+                    <p> ooo.ssg88@mail.ru </p>
+                    <p> +7 (928) 854-76-43 </p>
                     </div> 
                     <div style="margin-top: 20px;">
                     <span style="font-weight: 600;"> Приезжайте в наш офис: </span>
-                    <p> 127521, Москва, 17-й проезд Марьиной Рощи, 4к1. оф. 829 </p>
+                    <p> Сочи, Пластунская 50/2, Офис 46-б </p>
                     </div>
                     <div style="margin-top: 20px;">
                     <span style="font-weight: 600;"> График работы: </span>
@@ -162,13 +288,106 @@
                     <div id="error_flag" class="error-message" style="color: red; display: none;"></div>
                     <div id="successMessage" style="color: green; display: none;">Ваша заявка отправлена!</div>
                 </div>
+            
+
+            
         </div>
     </div>
 
 
 
 
-   
+    <!-- <div style="background-color: #434343;" class="flex">
+        <div class="con container">
+            <div class="car-img ">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="pez.jpg" alt="Description of Image" class=" " style="  ">
+                <img src="Engine _ Motors.jpeg" alt="Description of Image" class=" " style="  ">
+                <img src="enjine2.jpeg" alt="Description of Image" class=" " style="  ">
+            </div>
+            <div>
+                <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="" style="text-align:center">
+
+        </div>
+        <style>
+            .con {
+                position: relative;
+                max-width: 50%;
+                width: auto; /* Ширина контейнера карусели */
+                overflow: hidden; /* Скрываем изображения, выходящие за пределы контейнера */
+                height: auto;
+                max-height: 700px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+
+            .car-img {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                position: relative; /* Оставляем относительное позиционирование, чтобы кнопки оставались на месте */
+                width: 100%;
+                height: auto;
+            }
+
+                .car-img img {
+                    width: 100vw; /* Изображения занимают всю ширину контейнера */
+                    height: auto;
+                    object-fit: cover; /* Сохраняем пропорции изображений */
+                }
+
+            .prev, .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .prev {
+                left: 0;
+            }
+
+            .next {
+                right: 0;
+            }
+        </style>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.car-img img');
+            const totalImages = images.length;
+
+            // Функция перемещения карусели
+            function moveCarousel(direction) {
+                const imageWidth = document.querySelector('.con').clientWidth; // Получаем ширину контейнера .con
+
+                currentIndex += direction;
+
+                if (currentIndex < 0) {
+                    currentIndex = totalImages - 1;
+                } else if (currentIndex >= totalImages) {
+                    currentIndex = 0;
+                }
+
+                const offset = -currentIndex * imageWidth; // Используем ширину контейнера для смещения
+                document.querySelector('.car-img').style.transform = `translateX(${offset}px)`;
+            }
+
+            // Обновление ширины изображений при изменении размера экрана
+            window.addEventListener('resize', () => {
+                moveCarousel(0); // Переместить карусель на текущий индекс при изменении размера экрана
+            });
+        </script>
+    </div> -->
 
 
 
@@ -177,7 +396,7 @@
     <div class="footer_div" style="height: auto; ">
        <div class="marg12">
             <div class="dda">
-                <h2> FB ink.</h2>
+                <h2> ССГ</h2>
             <p> © 2023 Все права защищены</p>
             <a> Политика конфиденциальности </a>
             <p> ИНН 6234076824</p>
@@ -216,6 +435,7 @@
         </div>
 
     </div>
+
    </div>
 
     
@@ -226,7 +446,6 @@
 
 
     
-    <script src="../js/javaSC.js"></script>
-    <script src="../js/baza.js"></script>
+    <script src="../js/javaSC.js" defer></script>
 </body>
 </html>

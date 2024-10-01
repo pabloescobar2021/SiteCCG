@@ -86,24 +86,30 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 @mixin txtsetting1($backgrcolor,$bottompx, $widthpx){
   z-index: 2;text-align: center ; position: absolute; justify-content: center; margin: 0 auto; bottom: $bottompx;align-items: center;
   font-family: 'Arial', sans-serif; font-size: 18px; color: white; background-color: $backgrcolor; width: $widthpx;height: 35px;
-  border-radius: 5px;
+  border-radius: 5px; 
 }
-@mixin txtfont(){font-size: 35px;font-weight: bold; }
+@mixin txtfont(){font-size: 35px;font-weight: bold;pointer-events: none; }
 @mixin hover_img1(){
   transform: scale(1.05)
+}
+@mixin flexoff1(){
+  display:list-item; width: 100%;
 }
 
 .d_kond{
   @include img_cont_1();width: 100%; height: auto;
 
  a {@include a_sett()  };
- p{@include txtsetting1(none,150px,auto); @include txtfont };
+ p{@include txtsetting1(none,150px,auto); @include txtfont }; 
  img {@include img1setting() };
  img:hover {@include hover_img1() };
  button {@include txtsetting1(#867249,50px,120px) };
  button::before {content:'Подробнее' ;}
 }
-
+@media (max-width:1200px){.d_kond{
+  @include flexoff1();
+ a {width: 100%;}
+ } }
 
 
 
@@ -120,4 +126,12 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 }
 .h1baza {
   @include h1_1()
+}
+
+@mixin textbaza(){
+  font-family: "Arial", sans-serif; font-weight: 500;font-size: 15px;
+}
+.backg{
+  @include textbaza();
+  @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(18, 18, 55) ,black )
 }
