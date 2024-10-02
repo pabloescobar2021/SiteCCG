@@ -1,4 +1,6 @@
 
+    
+    
     function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
     menu.classList.toggle('show');
@@ -275,6 +277,9 @@ uslmenuid.addEventListener('mouseleave', function() {
 
 
 
+
+
+
 //  stranica electromontag
 
     const griditem123but = document.querySelectorAll('.griditem123');
@@ -325,7 +330,7 @@ uslmenuid.addEventListener('mouseleave', function() {
         if(event.target == modalkond) {
             modalkond.style.display = "none";
         }
-    })
+    });
 
 
     // toje samoe,no so strelkami i kruche
@@ -387,6 +392,14 @@ uslmenuid.addEventListener('mouseleave', function() {
         // Закрытие модального окна
         document.querySelector('.closekond').addEventListener('click', function () {
             document.getElementById('Modalkond').style.display = 'none';
-        });
+        })
     });
+
+    
+
+
+    
+
+ 
+    
     
