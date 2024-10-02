@@ -979,7 +979,7 @@ form {
 .arrowkond {cursor: pointer;position: absolute;transform: translateY(-50%);top: 50%;
     color: white;font-size: 30px;background-color: rgba(0, 0, 0, 0.5);padding: 10px;z-index: 20; }
 .arrowkond.lef{left: 10px;}
-.arrowkond.righ{right: 20%;}
+.arrowkond.righ{right: 10px;}
 /* Стили для кнопки закрытия */
 .closekond {
     color: #aaa;
@@ -997,6 +997,7 @@ form {
 
 #modalgallery {display: flex; width: 600px;height: auto;overflow: hidden;
      justify-content: center; margin: 0 auto;position: relative; }
+@media(max-width:700px){#modalgallery{width: 300px; } }
 .gallery img { width: 100%; }
 
 
