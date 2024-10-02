@@ -330,63 +330,63 @@ uslmenuid.addEventListener('mouseleave', function() {
 
     // toje samoe,no so strelkami i kruche
     
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     const kondbut = document.querySelectorAll('.btext_1');
-    //     const modalgallery1 = document.getElementById('modalgallery');
-    //     let currentGallery = [];
-    //     let currentSlideIndex = 0;
+    document.addEventListener('DOMContentLoaded', function () {
+        const kondbut = document.querySelectorAll('.btext_1');
+        const modalgallery1 = document.getElementById('modalgallery');
+        let currentGallery = [];
+        let currentSlideIndex = 0;
     
-    //     // Функция для отображения галереи
-    //     kondbut.forEach(button => {
-    //         button.addEventListener('click', function () {
-    //             const kondohtarget = this.getAttribute("data-target");
-    //             const galleryItems = document.querySelectorAll(`#${kondohtarget} img`);
+        // Функция для отображения галереи
+        kondbut.forEach(button => {
+            button.addEventListener('click', function () {
+                const kondohtarget = this.getAttribute("data-target");
+                const galleryItems = document.querySelectorAll(`#${kondohtarget} img`);
                 
-    //             // Очищаем модальное окно
-    //             modalgallery1.innerHTML = '';
+                // Очищаем модальное окно
+                modalgallery1.innerHTML = '';
     
-    //             // Добавляем все изображения из выбранной галереи в модальное окно
-    //             galleryItems.forEach((img, index) => {
-    //                 const newImg = img.cloneNode(); // Клонируем изображения
-    //                 if (index === 0) {
-    //                     newImg.classList.add('active'); // Первое изображение по умолчанию активно
-    //                 }
-    //                 modalgallery1.appendChild(newImg);
-    //             });
+                // Добавляем все изображения из выбранной галереи в модальное окно
+                galleryItems.forEach((img, index) => {
+                    const newImg = img.cloneNode(); // Клонируем изображения
+                    if (index === 0) {
+                        newImg.classList.add('active'); // Первое изображение по умолчанию активно
+                    }
+                    modalgallery1.appendChild(newImg);
+                });
     
-    //             currentGallery = document.querySelectorAll('#modalgallery img');
-    //             currentSlideIndex = 0;
-    //             showSlide(currentSlideIndex);
-    //             document.getElementById('Modalkond').style.display = 'block'; // Открываем модалку
-    //         });
-    //     });
+                currentGallery = document.querySelectorAll('#modalgallery img');
+                currentSlideIndex = 0;
+                showSlide(currentSlideIndex);
+                document.getElementById('Modalkond').style.display = 'block'; // Открываем модалку
+            });
+        });
     
-    //     // Функция для отображения слайда по индексу
-    //     function showSlide(index) {
-    //         currentGallery.forEach((slide, i) => {
-    //             slide.style.display = (i === index) ? 'block' : 'none';
-    //         });
-    //     }
+        // Функция для отображения слайда по индексу
+        function showSlide(index) {
+            currentGallery.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
     
-    //     // Переход к следующему слайду
-    //     function nextSlide() {
-    //         currentSlideIndex = (currentSlideIndex + 1) % currentGallery.length;
-    //         showSlide(currentSlideIndex);
-    //     }
+        // Переход к следующему слайду
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % currentGallery.length;
+            showSlide(currentSlideIndex);
+        }
     
-    //     // Переход к предыдущему слайду
-    //     function prevSlide() {
-    //         currentSlideIndex = (currentSlideIndex - 1 + currentGallery.length) % currentGallery.length;
-    //         showSlide(currentSlideIndex);
-    //     }
+        // Переход к предыдущему слайду
+        function prevSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + currentGallery.length) % currentGallery.length;
+            showSlide(currentSlideIndex);
+        }
     
-    //     // Навешиваем обработчики на стрелки
-    //     document.querySelector('.arrowkond.righ').addEventListener('click', nextSlide);
-    //     document.querySelector('.arrowkond.lef').addEventListener('click', prevSlide);
+        // Навешиваем обработчики на стрелки
+        document.querySelector('.arrowkond.righ').addEventListener('click', nextSlide);
+        document.querySelector('.arrowkond.lef').addEventListener('click', prevSlide);
     
-    //     // Закрытие модального окна
-    //     document.querySelector('.closekond').addEventListener('click', function () {
-    //         document.getElementById('Modalkond').style.display = 'none';
-    //     });
-    // });
+        // Закрытие модального окна
+        document.querySelector('.closekond').addEventListener('click', function () {
+            document.getElementById('Modalkond').style.display = 'none';
+        });
+    });
     
