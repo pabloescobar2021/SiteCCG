@@ -734,7 +734,7 @@ form {
         .DivItapi {
             display:block;
             margin:0 auto;
-            width:65%;
+            width:75%;
             height:auto;
         }
         .DivAll{
@@ -792,7 +792,7 @@ form {
                 button[type="submit"] {width: auto; }
              }
 
-             .footer_div {background-color: rgb(255, 255, 255) ;display: grid;grid-template-columns: 25% 25% 25% 25%;width: 70%; margin: 0 auto;  }
+             .footer_div {background-color: rgb(255, 255, 255) ;display: grid;grid-template-columns: 50% 50%;width: 70%; margin: 0 auto;  }
         .dda {margin-top: 10px; height: auto;display: grid; justify-content: center; align-items: center; }
         
         .footer_div h2 {
