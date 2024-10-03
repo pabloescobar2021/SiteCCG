@@ -1036,3 +1036,43 @@ form {
 #eleckontent img{
     width: 450px;
 }
+
+
+
+
+.krovel1{width: 100%; height: 500px; display: flex; overflow: hidden;color: white; position: relative;
+   
+}
+
+
+
+.kroveltxt{
+    z-index: 1; margin: 0 auto;  ;align-items: center; 
+    
+    font-size: 18px;font-family: 'Roboto', Arial, sans-serif;;width: 100%;font-weight: 300;
+}
+
+.h1txtkrov{display: flex ; justify-content: left; align-items: center;
+    margin-left: 20%;margin-top: 50px;margin-bottom: 50px;;font-size: 30px;}
+.gridcont{
+    display: grid; width: 100%; justify-content: left; align-items: center;margin:0 20% ;
+    grid-template-columns: 400px 400px; /* Две колонки одинаковой ширины */
+    grid-template-rows: 150px 150px; /* Две строки с автоматической высотой */
+    gap: 20px; /* Расстояние между элементами */  
+}
+
+/* .ramka1{ background-color: rgba(203, 125, 23, 0.66); 
+    border-radius: 7px;border: #97510b 1px solid;display: flex; } */
+
+.s1231sadasd {object-fit: cover; width: 100%;height: 700px;position: absolute;z-index: 0;}
+
+
+.imgfon2 {
+position: absolute;display: flex; justify-content: center; align-items: center; margin: 0 auto;
+ width: 100%;height: 1200px;z-index: 0; ;filter: blur(8px); transform: translate(10px, -500px);
+} 
+
+@media(max-width:900px){
+    .gridcont{display:flex;flex-wrap: wrap; margin: 0;justify-content: center; align-items: center; text-align: center;}
+
+}

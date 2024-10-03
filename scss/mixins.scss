@@ -95,6 +95,9 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 @mixin flexoff1(){
   display:list-item; width: 100%;
 }
+@mixin flexbaza(){
+ display: flex;
+}
 
 .d_kond{
   @include img_cont_1();width: 100%; height: auto;
@@ -107,6 +110,20 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
  button::before {content:'Подробнее' ;}
 }
 @media (max-width:1200px){.d_kond{
+  @include flexoff1();
+ a {width: 100%;}
+ } }
+ .d_kond2{
+  @include img_cont_1();width: 100%; height: auto;
+
+ a {@include a_sett(); height: 350px  };
+ p{@include txtsetting1(none,150px,auto); @include txtfont }; 
+ img {@include img1setting(); height: 350px };
+ img:hover {@include hover_img1() };
+ button {@include txtsetting1(#867249,50px,120px) };
+ button::before {content:'Подробнее' ;}
+}
+@media (max-width:1200px){.d_kond2{
   @include flexoff1();
  a {width: 100%;}
  } }
@@ -124,6 +141,11 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 .divtext {
   @include konttext_1()
 }
+
+
+
+
+
 .h1baza {
   @include h1_1()
 }

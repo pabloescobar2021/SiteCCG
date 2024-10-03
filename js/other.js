@@ -31,3 +31,13 @@ function populateMenu() {
         uslmenuid1.appendChild(document.createElement('br')); // Добавляем перенос строки после каждой ссылки
     });
 }
+
+
+
+window.addEventListener('scroll', function () {
+    const parallaxImage = document.querySelector('.s1231sadasd');
+    const scrolled = window.scrollY;
+    
+    // Чем больше значение, тем быстрее будет двигаться изображение
+    parallaxImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+});
