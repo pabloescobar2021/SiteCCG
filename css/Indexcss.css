@@ -734,41 +734,40 @@ form {
         .DivItapi {
             display:block;
             margin:0 auto;
-            width:75%;
+            width:100%;
             height:auto;
         }
         .DivAll{
-            display:flex;flex-wrap:wrap;width: auto; }
-        .DivAll div{
-            margin:4px;
-            flex:1 1 30%;
+            display:flex; flex-wrap:wrap ;
+            width: 100%;
+            margin: 0 auto; justify-content: center;
+            width: 100%; height: auto;
+            background-color: #4f4e4b;border-radius: 20px;
+            
         }
-        .TxtItapi {color:white; text-align:center;position:relative ; }
-            .TxtItapi .txt2 {
-                position: absolute;
-                z-index: 2;
-                top: 50%;
-                bottom:0;
-                left:5%;
-                right:0;
-                font-size:18px;
-                font-weight:500;
-                text-align:left;
-                width: 300px;
-            }
-            .txt3 {position: absolute ;z-index: 2;top: 60%;bottom: 0;left: 5%;right: 0;font-size: 14px;font-weight: 300;text-align: left;width: 300px;  }
-            .txt3_mar {margin-top:30px ; }
-        .TxtItapi .TxtFon  {position:center;text-align:left ;z-index:1 ; font-size:250px; color:rgb(122, 122, 122)}
-        .TxtItapi .txt2, .txt3 {left:43%  }
+        .DivAll div {
+            display: flex;width: 100%;flex: 1 1 30%;margin-top: 50px; margin-bottom: 50px;
+            
+        }
+        .txt1_2 {
+            color: rgb(196, 164, 94); display: flex;align-items: center; justify-content: left;
+            text-align: left; font-size: 18px;
+            width: 100%;font-weight: bold;
+        }
+        .txt2{
+            color: rgb(245, 223, 175); display: flex;align-items: center; justify-content: center;
+            text-align: left; font-size: 18px;
+            width: 100%;
+        }
+        .TxtFon  {text-align:left ;z-index:1 ; font-size:100px; color:rgb(134, 123, 89)}
+
+        
+        
+     
 
             @media (max-width:1200px) {
-                .DivItapi {width: 100%;}
-                .DivAll div {flex:1 1 100%}
-                .TxtItapi .txt2, .txt3 {width:220px ;font-size: 14px;left: 30%; }
-                .TxtItapi .TxtFon {font-size: 100px;}
-                .TxtItapi .txt2 {top:30%; }
-                .txt2 {position:absolute; }
-                .txt3 {width:250px; top:42% }
+                .DivAll div { flex: 1 1 50%;}
+                .txt2 {font-size: 14px;}
             }
         
 

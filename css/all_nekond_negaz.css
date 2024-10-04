@@ -552,7 +552,14 @@ form {
     align-items: center;
     justify-content: center;
 }  
-            @media (max-width:1200px) {.intoG {margin:auto;gap: 5px;   }  }
+            @media (max-width:1200px) {.intoG {
+                gap: 5px;   
+                display: grid; justify-content: center; align-items: center;  margin:0 auto;
+                grid-template-columns:2fr 2fr ;
+                grid-template-columns: 200px 200px;
+                grid-template-rows: 100px 100px;
+                width: 100%;
+            }  }
 
             /* @media (max-width: 767px) {
                 .intoG {
@@ -583,7 +590,9 @@ form {
     .intoI{font-size: 12px;padding: 10px; margin-left:0 ;}
     .intoI img {width: 30px; }
 }  
-
+@media (max-width:1200px) {.intoI{
+    margin-left:0px ;
+}}
 
 
 .But_Zayav {
