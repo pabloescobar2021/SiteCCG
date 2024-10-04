@@ -739,25 +739,30 @@ form {
         }
         .DivAll{
             display:flex; flex-wrap:wrap ;
-            width: 100%;
             margin: 0 auto; justify-content: center;
-            width: 100%; height: auto;
+            width: 80%; height: auto;
             background-color: #4f4e4b;border-radius: 20px;
             
         }
         .DivAll div {
-            display: flex;width: 100%;flex: 1 1 30%;margin-top: 50px; margin-bottom: 50px;
+            display: flex;width: 0;flex: 1 1 30%;
+            
+        }
+        .ooo{
+           padding: 50px; 
+        }
+        .ooo_2{
             
         }
         .txt1_2 {
             color: rgb(196, 164, 94); display: flex;align-items: center; justify-content: left;
             text-align: left; font-size: 18px;
-            width: 100%;font-weight: bold;
+            width: 70%;font-weight: bold;height: auto;
         }
         .txt2{
-            color: rgb(245, 223, 175); display: flex;align-items: center; justify-content: center;
+            color: rgb(245, 223, 175); display: flex;align-items: center; justify-content: left;
             text-align: left; font-size: 18px;
-            width: 100%;
+            width: 70%;
         }
         .TxtFon  {text-align:left ;z-index:1 ; font-size:100px; color:rgb(134, 123, 89)}
 
