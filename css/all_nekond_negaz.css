@@ -1046,6 +1046,47 @@ form {
     width: 450px;
 }
 
+.DivItapi {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    height:auto;
+}
+.DivAll{
+    display:flex; flex-wrap:wrap ;
+    margin: 0 auto; justify-content: center;
+    width: 80%; height: auto;
+    background-color: #4f4e4b;border-radius: 20px;
+    
+}
+.DivAll div {
+    display: flex;width: 0;flex: 1 1 30%;
+    
+}
+.ooo{
+   padding: 50px; 
+}
+.ooo_2{
+    
+}
+.txt1_2 {
+    color: rgb(196, 164, 94); display: flex;align-items: center; justify-content: left;
+    text-align: left; font-size: 18px;
+    width: 70%;font-weight: bold;height: auto;
+}
+.txt2{
+    color: rgb(245, 223, 175); display: flex;align-items: center; justify-content: left;
+    text-align: left; font-size: 18px;
+    width: 70%;
+}
+.TxtFon  {text-align:left ;z-index:1 ; font-size:100px; color:rgb(134, 123, 89)}
+
+    @media (max-width:1200px) {
+        .DivAll div { flex: 1 1 50%;}
+        .txt2 {font-size: 14px;}
+    }
+
+
 
 
 
@@ -1084,4 +1125,67 @@ position: absolute;display: flex; justify-content: center; align-items: center; 
 @media(max-width:900px){
     .gridcont{display:flex;flex-wrap: wrap; margin: 0;justify-content: center; align-items: center; text-align: center;}
 
+}
+
+
+.kontnvk0{
+    overflow: hidden;
+    width: 100%; height: 900px; display: flex; overflow: hidden;color: white; position: relative;font-family: 'Roboto', Arial, sans-serif;
+}
+.kontnvk1 {display: flex; justify-content: center; align-items: center;
+    object-fit: cover; width: 100%; height: auto; filter: brightness(80%) blur(5px); position: absolute;
+}
+.kontnvk1 img{
+    width: 100%; height: auto; position: relative;
+}
+.kontnvk2_grid{
+    display: grid; position: relative; justify-content: center; align-items: center; margin-top:100px;
+    width: 100%; height: 700px;
+    grid-template-columns: 200px 700px; gap: 10px;
+    /* grid-template-rows: 100px 100px 100px 100px 100px 100px ; */
+}
+.kontnvk2_grid span,.kontnvk2_grid p  {
+    background-color: #867249; width: 100%;height: 100%;display: flex; justify-content: left; align-items: center;
+    padding: 10px; border-radius: 5px; font-size: 17px;z-index: 1;
+}
+.kontnvk2_grid p{ font-weight: bold; font-size: 18px;}
+
+.circlenvk{
+    position: absolute;width: 200px;height: 200px;
+    background: radial-gradient(circle, rgba(255,0,0,0.8), rgba(255,0,0,0));
+    background-image: linear-gradient(rgba(217, 164, 7, 0.8), rgba(255,0,0,0));
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2 ease, opacity 0.3 ease;
+    opacity: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.6); /* Светящаяся тень */
+}
+@media(max-width:1200px){
+    .kontnvk0{
+        height: auto;
+    }
+    .kontnvk1{
+        height: 100%;
+    }
+    .kontnvk1 img{
+        height: 100%;
+    }
+    .kontnvk2_grid{
+        /* grid-template-columns: 150px 250px;height: 100%;width: 100%; */
+        display: flex;flex-wrap: wrap ;height: auto;margin-top:10px;
+
+
+    }
+    .kontnvk2_grid span,.kontnvk2_grid p {
+        font-size: 15px; justify-content: center; margin: 0 auto; 
+        height: 100px;
+    }
+    .kontnvk2_grid p{
+        display: flex; width: 50%; border-radius: 20px;
+        text-align: center; height: auto;
+    }
+    .kontnvk2_grid span {
+        width: 80%;text-align: center;height: auto;margin-bottom: 20px;
+    }
 }

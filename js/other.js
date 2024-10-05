@@ -41,3 +41,33 @@ window.addEventListener('scroll', function () {
     // Чем больше значение, тем быстрее будет двигаться изображение
     parallaxImage.style.transform = `translateY(${scrolled * 0.3}px)`;
 });
+
+
+
+
+
+const contnvk = document.querySelector('.kontnvk2_grid');
+const circlenvk = document.createElement('div');
+
+contnvk.addEventListener('mousemove', (e) => {
+    
+
+    // Изменение фона элементов текста в зависимости от позиции курсора
+    const elements = document.querySelectorAll('.kontnvk2_grid span, .kontnvk2_grid p');
+    elements.forEach((el) => {
+        const elRect = el.getBoundingClientRect();
+        const elX = (e.clientX - elRect.left) / elRect.width * 100;
+        const elY = (e.clientY - elRect.top) / elRect.height * 100;
+
+        el.style.background = `radial-gradient(circle at ${elX}% ${elY}%, rgba(217, 164, 7, 0.6), #867249)`;
+        el.style.opacity = '1'; // Делаем его полностью видимым при движении курсора
+    });
+});
+
+contnvk.addEventListener('mouseleave', () => {
+    // Восстанавливаем исходный фон
+    const elements = document.querySelectorAll('.kontnvk2_grid span, .kontnvk2_grid p');
+    elements.forEach((el) => {
+        el.style.background = 'rgba(134, 114, 73, 1)'; // Устанавливаем плавное исчезновение градиента
+    });
+});
