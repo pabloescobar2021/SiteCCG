@@ -1194,3 +1194,24 @@ position: absolute;display: flex; justify-content: center; align-items: center; 
         width: 80%;text-align: center;height: auto;margin-bottom: 20px;
     }
 }
+
+.blago1{
+    display: flex; position: relative;flex-wrap: wrap;width: 90%; justify-content: center;align-items: center;
+    margin: 0 auto;
+}
+.blago1 a{
+    display: flex;flex: 1 1 50%;justify-content: center;align-items: center;padding: 10px;
+    object-fit: cover;
+    height: 450px; width: 100%;
+}
+.blago1 img{
+    width: 100%;height: 100%; position: relative;justify-content: center;align-items: center;
+    filter:  brightness(80%);
+    
+}
+.blago1 p{
+    position: absolute;
+    font-weight: bold; font-family: "Arial", sans-serif; font-size:30px; color: white;
+    pointer-events: none;
+    background-color: gray;width:calc(auto + 50px) ;
+}
