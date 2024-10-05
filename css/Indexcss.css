@@ -765,14 +765,15 @@ form {
             width: 70%;
         }
         .TxtFon  {text-align:left ;z-index:1 ; font-size:100px; color:rgb(134, 123, 89)}
-
         
-        
-     
-
             @media (max-width:1200px) {
-                .DivAll div { flex: 1 1 50%;}
-                .txt2 {font-size: 14px;}
+                .txt2 {font-size: 14px;height: auto;position: relative;text-align: center; justify-content: center;width: auto;}
+                .txt1_2{width:auto;height: auto;text-align: center;justify-content: center;}
+                .DivAll{ width: 100%;display: block;}
+                .txt1_2{justify-content: center;}
+                .DivAll div {width: 100%;}
+                .TxtFon {font-size:70px;}
+                .ooo{width: 100%;border-bottom:2px rgb(81, 56, 56) solid ; }
             }
         
 
@@ -818,11 +819,12 @@ form {
         .footer_div p, .footer_div a {height: auto;width:auto ; ;font-family: "Montserrat", sans-serif; font-size: 15px;text-align: left;  }
 
         @media (max-width:1200px) {
-         .footer_div { display: flex;flex-wrap: wrap;width: 100%; }   
+         .footer_div {display: block; }   
          .marg12{ flex:1 1 50%;} 
          .footer_div p, .footer_div a {height: auto; font-size: 10px;}
-         .dda{ justify-content:left; align-items: center;}
+         .dda{ justify-content:center; align-items: center;}
         }
+
 
 
 
