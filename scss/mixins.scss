@@ -103,7 +103,7 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
   @include img_cont_1();width: 100%; height: auto;
 
  a {@include a_sett()  };
- p{@include txtsetting1(none,150px,auto); @include txtfont }; 
+ p{@include txtsetting1(none,120px,auto); @include txtfont }; 
  img {@include img1setting() };
  img:hover {@include hover_img1() };
  button {@include txtsetting1(#867249,50px,120px) };
@@ -165,10 +165,12 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 }
 .backg{
   @include textbaza();
-  @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(18, 18, 55) ,black )
+  @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(106, 65, 14) ,black )
 }
 
-
+.del1{
+  @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(106, 65, 14) ,black )
+}
 
 
 // ---------------------------------krasivaya nadpic 
