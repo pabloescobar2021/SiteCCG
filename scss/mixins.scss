@@ -167,3 +167,17 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
   @include textbaza();
   @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(18, 18, 55) ,black )
 }
+
+
+
+
+// ---------------------------------krasivaya nadpic 
+
+@mixin p_nadpic(){
+  position: absolute;
+    font-weight: bold; font-family: "Arial", sans-serif; font-size:30px; color: white;
+    pointer-events: none;
+    background-color: rgb(147, 119, 54);width:calc(auto + 50px) ;
+    justify-content: center;align-items: center; display: flex;text-align: center;
+    height: auto; width: auto; 
+}

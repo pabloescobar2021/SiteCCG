@@ -1206,12 +1206,33 @@ position: absolute;display: flex; justify-content: center; align-items: center; 
 }
 .blago1 img{
     width: 100%;height: 100%; position: relative;justify-content: center;align-items: center;
-    filter:  brightness(80%);
+    filter:  brightness(80%);transition: transform 0.3 ease;
     
 }
 .blago1 p{
     position: absolute;
     font-weight: bold; font-family: "Arial", sans-serif; font-size:30px; color: white;
     pointer-events: none;
-    background-color: gray;width:calc(auto + 50px) ;
+    justify-content: center;align-items: center; display: flex;text-align: center;
+    height: auto; width: auto; 
+    
+}
+.blago1 a:hover{
+    transform: scale(1.02);
+}
+@media (max-width: 900px){
+    .blago1 a{flex: 1 1 100%; }
+}
+
+
+
+
+
+.blagoalldiv{
+    display: grid;justify-content: center;align-items: center;
+    color: white; background-color: #000;
+}
+.intopunder {display: none;}
+.battxt_1{
+    cursor: pointer;
 }

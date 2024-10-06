@@ -71,3 +71,27 @@ contnvk.addEventListener('mouseleave', () => {
         el.style.background = 'rgba(134, 114, 73, 1)'; // Устанавливаем плавное исчезновение градиента
     });
 });
+
+
+
+
+
+
+
+
+
+const conttxt = document.querySelectorAll('.intopunder');
+const txtbutt = document.querySelectorAll('.battxt_1');
+
+// Проходим по каждой кнопке и добавляем обработчик клика
+txtbutt.forEach((button, index) => {
+    button.addEventListener('click', function() {
+        // Переключаем видимость соответствующего элемента
+        const content = conttxt[index];
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+});
