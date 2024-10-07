@@ -446,6 +446,71 @@ form {
         form button:hover {
             background-color: #45a049;
         }
+
+
+
+
+
+
+.dOtopImgNch{
+display: grid; position: relative;
+color: white;font-size: 18px;
+}
+.dOtopImgNch div{
+    display: flex;object-fit:cover ; justify-content: center;align-items: center;margin: 0 auto;position: relative;
+    z-index: 1;
+    width: 70%;height: 700px;
+
+}
+.img111{
+    position: absolute;
+    width: 100%;height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+    opacity: 1;
+    filter: brightness(65%);
+}
+.dp1{
+    position: relative;
+    display: flex; justify-content: center;align-items: center;margin: 0 auto;flex-wrap: wrap;
+    z-index: 5;
+}
+.dp1 p{
+    flex: 1 1 50%;padding: 10px; font-weight: 500;
+}
+
+.img111::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Измените на нужную высоту затемнения */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 90%); /* Затемняющий градиент снизу вверх */    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2; /* Убедитесь, что псевдоэлемент выше изображения */
+    pointer-events: none;
+}
+.img111:hover::after{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ������������ ��� ��������� ��������� */
 @media (max-width: 600px) {
     .modal-content {
