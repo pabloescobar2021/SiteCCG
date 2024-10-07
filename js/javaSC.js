@@ -64,7 +64,9 @@
     } );
                         
 
-
+    document.getElementById('uslugiscroll').addEventListener('click', function(){
+        document.getElementById('d222').scrollIntoView({behavior: 'smooth'});
+    } );
 
 
 
