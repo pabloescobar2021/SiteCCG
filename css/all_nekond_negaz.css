@@ -588,6 +588,44 @@ background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(137, 112, 79, 0
 
 
 
+.telpdiv1{
+    display: grid;grid-template-columns: 3fr 3fr 3fr;
+    justify-content: center;align-items: center;margin: 0 auto;
+}
+.ptepl{
+    display: flex;
+    justify-content: center;align-items: center;margin: 0 auto ;
+    text-align: center;cursor: pointer;
+    background-color: rgba(132, 129, 129, 0.248);height: 100px; width: 100%;
+    border-bottom: 2px solid black;border-right: 1px solid black; 
+    border-radius: 10px;
+}
+.ptepl_active{
+    background-color: red;
+}
+.ptepl:hover{
+    color: rgb(255, 210, 150);background-color: rgba(180, 174, 174, 0.44);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);font-weight: bold;
+}
+
+#telpintcontforbut{
+    display: grid;justify-content: center;align-items: center;margin: 0 auto; text-align: center;
+    width: 80%;
+    /* background-image: url(../img/zil-4.jpg); */
+    background-color:rgba(180, 174, 174, 0.44) ; border-radius: 10px;
+    padding: 30px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

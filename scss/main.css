@@ -64,7 +64,7 @@
   position: absolute;
   justify-content: center;
   margin: 0 auto;
-  bottom: 150px;
+  bottom: 120px;
   align-items: center;
   font-family: "Arial", sans-serif;
   font-size: 18px;
@@ -268,8 +268,31 @@
   font-weight: 500;
   font-size: 15px;
   background: rgb(138, 95, 46);
-  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(18, 18, 55) 73%, black 98%);
+  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(106, 65, 14) 73%, black 98%);
   background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
   animation: grad_all-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
   opacity: 1;
+}
+
+.del1 {
+  background: rgb(138, 95, 46);
+  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(106, 65, 14) 73%, black 98%);
+  background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad_all-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+  opacity: 1;
+}
+
+.ptepl {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Arial", sans-serif;
+}
+
+#telpintcontforbut {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */

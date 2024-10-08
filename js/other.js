@@ -76,27 +76,6 @@ contnvk.addEventListener('mouseleave', () => {
 
 
 
-
-// --------------------------------------------------
-
-
-// const conttxt = document.querySelectorAll('.intopunder');
-// const txtbutt = document.querySelectorAll('.battxt_1');
-
-// // Проходим по каждой кнопке и добавляем обработчик клика
-// txtbutt.forEach((button, index) => {
-//     button.addEventListener('click', function() {
-//         // Переключаем видимость соответствующего элемента
-//         const content = conttxt[index];
-//         if (content.style.display === 'flex') {
-//             content.style.display = 'none';
-//         } else {
-//             content.style.display = 'flex';
-//         }
-//     });
-// });
-
-
 const parag = document.querySelectorAll('.battxt_1');
 
 parag.forEach((p) =>{
@@ -121,5 +100,25 @@ parag.forEach((p) =>{
                 arrow.textContent = ' ˄';  // Меняем стрелку на вверх
             }
         }
-    });
+    })
 })
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const butt_tepl = document.querySelectorAll('.ptepl');
+//     const contfor = document.getElementById('telpintcontforbut');
+
+//     butt_tepl.forEach((button) => {
+//         button.addEventListener('click', function () {
+//             const txtcont1 = this.getAttribute("data-target"); // Получаем значение data-target
+//             const txtcont2 = document.getElementById(txtcont1).innerHTML; // Ищем элемент по id
+//             contfor.innerHTML = txtcont2; // Заменяем содержимое в нужном div
+//         });
+//     });
+// });
+
+

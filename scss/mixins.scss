@@ -183,3 +183,20 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
     justify-content: center;align-items: center; display: flex;text-align: center;
     height: auto; width: auto; 
 }
+
+
+// ----------------------------------baza text
+@mixin textBAZA($fontW){
+  color: white;font-size: 20px;font-weight:$fontW;
+  font-family: "Arial", sans-serif;
+
+}
+
+
+.ptepl{
+  @include textBAZA(500);
+}
+#telpintcontforbut{
+  @include textBAZA(300);
+  font-size: 30px;
+}
