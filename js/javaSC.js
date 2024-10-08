@@ -64,9 +64,17 @@
     } );
                         
 
-    document.getElementById('uslugiscroll').addEventListener('click', function(){
-        document.getElementById('d222').scrollIntoView({behavior: 'smooth'});
-    } );
+    document.addEventListener('DOMContentLoaded', () => {
+        const uslugiscroll = document.getElementById('uslugiscroll');
+        const d222 = document.getElementById('d222');
+    
+        // Проверяем, существуют ли элементы перед добавлением обработчика
+        if (uslugiscroll && d222) {
+            uslugiscroll.addEventListener('click', function() {
+                d222.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+    });
 
 
 

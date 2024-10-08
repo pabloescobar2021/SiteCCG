@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const mobbut_toIndex = document.getElementById('uslmobile2');
+
+    
+mobbut_toIndex.addEventListener('click', function(){
+ window.location.href = "../index.html#d222";
+
+})
+
+});
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     populateMenu();
 });
