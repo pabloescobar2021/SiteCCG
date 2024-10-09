@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
 const images = document.querySelectorAll('.k_tepl img');
 const indicators = document.querySelectorAll('.carousel-indicators div');
 let currentIndex = 0;

@@ -295,4 +295,16 @@
   font-weight: 300;
   font-family: "Arial", sans-serif;
   font-size: 30px;
+}
+
+.primeri1 h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 60px;
 }/*# sourceMappingURL=mixins.css.map */
