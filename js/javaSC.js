@@ -6,7 +6,31 @@
     menu.classList.toggle('show');
     }
 
-          
+        
+    
+
+
+
+    // zadaem nujnuyu ccilku dlya elemeta o nas 
+    const aboutLink = document.querySelector('.a_nav1 .onas'); // Находим первый элемент с классом MenuBut
+    if (aboutLink) {
+        aboutLink.href = 'pages/Onas.html'; // Задаем ссылку
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /**     ��������       */

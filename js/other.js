@@ -13,6 +13,17 @@ mobbut_toIndex.addEventListener('click', function(){
 
 
 
+ // zadaem nujnuyu ccilku dlya elemeta o nas 
+ const aboutLink1 = document.querySelector('.a_nav1 .MenuBut'); // Находим первый элемент с классом MenuBut
+ if (aboutLink1) {
+     aboutLink1.href = 'Onas.html'; // Задаем ссылку
+ }
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     populateMenu();
 });
