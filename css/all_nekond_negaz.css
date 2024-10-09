@@ -627,6 +627,75 @@ background-image: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(137, 112, 79, 0
 
 
 
+.k_tepl {
+    position: relative; justify-content: center; align-items: center;margin: 0 auto;
+    width: 60%;
+    overflow: hidden; border-radius: 10px;margin-top: 10px;
+  }
+  
+  .k_tepl img {
+    width: 100%;
+    display: none;
+  }
+  
+  .k_tepl img.active {
+    display: block;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .carousel-indicators div {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators div.active {
+    background-color: rgb(255, 255, 255);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
