@@ -455,7 +455,7 @@ form {
 }   
     .d222 {background-color: #37312f5b; display: flex;}
     .d234 {margin: 0 auto;  }
-    .Usltxt {text-align: center; color:white ;font-size:40px;font-family: Arial, sans-serif; font-weight:bold;line-height: 1.55;margin-top: 60px;margin-bottom: 20px; } 
+    .Usltxt {text-align: center; color:white ;font-size:40px;font-family: "Montserrat", sans-serif; font-weight:bold;line-height: 1.55;margin-top: 60px; } 
          
     .ContUsl {max-width:100%;width:auto ; align-items:center; margin: 0 auto; }
 
