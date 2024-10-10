@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.gradient_all {
+  background: rgb(138, 95, 46);
+  background: linear-gradient(90deg, #ea1616 0%, #834f42 31%, #897e7b 73%, #46190e 98%);
+  background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad_all-animation 10s ease infinite; /* Анимация длительностью 10 секунд */
+  opacity: 1;
+}
+
+.grad_but_hov {
+  background: linear-gradient(90deg, #ea1616 0%, #834f42 31%, #897e7b 73%, #46190e 98%);
+  background-size: 300% 300%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad22 15s ease infinite; /* Анимация длительностью 10 секунд */
+  transition: background 1.5s ease;
+  width: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+@keyframes grad_all-animation {
+  0% {
+    background-position: 0% 50%; /* Начальная позиция */
+  }
+  50% {
+    background-position: 100% 50%; /* В середине */
+  }
+  100% {
+    background-position: 0% 50%; /* Возврат к началу */
+  }
+}
+@keyframes grad22 {
+  0% {
+    background-position: 0% 50%; /* Начальная позиция */
+  }
+  50% {
+    background-position: 100% 50%; /* В середине */
+  }
+  100% {
+    background-position: 0% 50%; /* Возврат к началу */
+  }
+}
+.d_kond {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.d_kond a {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  cursor: pointer;
+  flex: 1 1 30%;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.d_kond p {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 120px;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: none;
+  width: auto;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  pointer-events: none;
+}
+.d_kond img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(64%);
+}
+.d_kond img:hover {
+  transform: scale(1.05);
+}
+.d_kond button {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 50px;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #867249;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+}
+.d_kond button::before {
+  content: "Подробнее";
+}
+
+@media (max-width: 1200px) {
+  .d_kond {
+    display: list-item;
+    width: 100%;
+  }
+  .d_kond a {
+    width: 100%;
+  }
+}
+.d_kond2, .d_kond3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.d_kond2 a, .d_kond3 a {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  cursor: pointer;
+  flex: 1 1 30%;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 350px;
+}
+.d_kond2 p, .d_kond3 p {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 150px;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: none;
+  width: auto;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  pointer-events: none;
+}
+.d_kond2 img, .d_kond3 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(64%);
+  height: 350px;
+}
+.d_kond2 img:hover, .d_kond3 img:hover {
+  transform: scale(1.05);
+}
+.d_kond2 button, .d_kond3 button {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 50px;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #867249;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+}
+.d_kond2 button::before, .d_kond3 button::before {
+  content: "Подробнее";
+}
+
+@media (max-width: 1200px) {
+  .d_kond2, .d_kond3 {
+    display: list-item;
+    width: 100%;
+  }
+  .d_kond2 a, .d_kond3 a {
+    width: 100%;
+  }
+}
+.d_kond3 a {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  cursor: pointer;
+  flex: 1 1 30%;
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 300px;
+}
+.d_kond3 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(64%);
+  height: 100%;
+}
+.d_kond3 p {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 50%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: none;
+  width: auto;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .d_kond3 {
+    display: list-item;
+    width: 100%;
+  }
+  .d_kond3 a {
+    width: 100%;
+    height: 250px;
+  }
+}
+.divtext {
+  display: flexbox;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1baza {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 43px;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+.backg {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  background: rgb(138, 95, 46);
+  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(106, 65, 14) 73%, black 98%);
+  background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad_all-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+  opacity: 1;
+}
+
+.del1 {
+  background: rgb(138, 95, 46);
+  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(106, 65, 14) 73%, black 98%);
+  background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad_all-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+  opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map */
