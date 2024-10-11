@@ -189,7 +189,9 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
 @mixin textBAZA($fontW){
   color: white;font-size: 20px;font-weight:$fontW;
   font-family: "Arial", sans-serif;
-
+}
+@mixin textBAZA_monserat(){
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -204,4 +206,10 @@ $gradcolor:90deg, rgba(138,95,46,0.9) 0%, rgba(101,79,54,0.9) 31%, rgba(56,51,41
   @include textBAZA(bold);
   display: flex; text-align: center;justify-content: center; margin: 0 auto;
   font-size: 60px;
+}
+
+// -------------------blagousrt
+
+.battxt_1{
+  @include grad_all(20s,rgb(74, 60, 60) ,rgb(61, 27, 27) ,rgb(106, 65, 14) ,black )
 }

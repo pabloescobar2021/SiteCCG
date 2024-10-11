@@ -1,0 +1,237 @@
+.gif-containerMonolit {
+    width: auto; /* Ширина контейнера */
+    height: auto; /* Высота контейнера */
+    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+    overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+    
+    
+}
+.gif-containerMonolit::before{
+    content: ""; /* Создаём псевдоэлемент */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changeGif 20s infinite; /* Анимация смены фонов */
+    filter: blur(5px); /* Размытие фона */
+    z-index: 0; /* За всеми другими элементами */
+}
+.content_1{
+    position: relative; /* Относительное позиционирование для надстройки */
+    z-index: 20; /* Чтобы элементы были поверх размытого фона */
+    }
+
+@keyframes changeGif { 
+    0% {
+        background-image: url('../giff/19740960-hd_1280_720_25fps.gif');
+    }
+    100% {
+        background-image: url('../giff/UniConverter 15_20241012021615.gif');
+    }
+}
+.gif-container background-image {
+    filter: blur(20px);
+}
+
+
+
+
+.tech-advantages {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex; text-align: center; justify-content: center;margin: 0 auto;
+}
+
+.tech-advantages h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.advantage-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ---------------------------------- */
+
+
+
+
+.collaboration-advantages {
+    padding: 50px 0;
+    background-color: #eef2f5;
+    display: flex; text-align: center; justify-content: center;margin: 0 auto;
+}
+
+.collaboration-advantages h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.advantage-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center; justify-content: center;margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+/* ----------------------------------------- */
+
+
+
+.alldivmon{
+    color: white;font-family: "Montserrat", sans-serif;    font-size: 30px;     font-weight: bold;
+}
+.alldivmon div{
+    border-radius: 20px; gap: 10px; margin-bottom:10px ;
+}
+
+.h1d{
+    display: flex; justify-content: center;align-items: center;text-align: center; margin: 0 auto;
+    font-size: 40px;width: 50%;margin-bottom: 20px; pointer-events: none;
+}
+
+.div1_jil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    position: relative;
+    height: 300px; /* Фиксированная высота */
+    width: 100%; /* Растянуть по ширине контейнера */
+    overflow: hidden; /* Обрезать лишние части изображения */
+}
+.div1_jil img{
+    height: 100%; /* Растянуть по высоте контейнера */
+    width: 100%; /* Растянуть по ширине контейнера */
+    object-fit: cover; 
+}
+.div1_jil p{
+    display: flex;
+    position: absolute;
+    color: white; /* Цвет текста */
+
+    z-index: 1;
+}
+
+.div1_2block{
+    display: flex; justify-content: center; align-items: center; margin: 0 auto; overflow: hidden; 
+    height: 300px; width: 100%;
+}
+.d1b2{
+    display: flex; justify-content: center; align-items: center; margin: 0 auto; overflow: hidden;position: relative;
+    width: 100%;
+}
+.d1b2 img{
+    display: flex;flex: 1 1 50%;
+    width: 100%;
+     object-fit: fill;
+}
+.d1b2 p {
+    display: flex; justify-content: center; align-items: center; margin: 0 auto;
+    position: absolute;
+}
+
+
+.d1b3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    height: 300px; /* Фиксированная высота */
+    width: 100%; /* Растянуть по ширине контейнера */
+    overflow: hidden; /* Обрезать лишние части изображения */
+    z-index: 0;
+}
+.d1b3 img{
+    height: 100%; /* Растянуть по высоте контейнера */
+    width: 100%; /* Растянуть по ширине контейнера */
+    object-fit: cover;  
+    
+}
+.d1b3 p {
+    display: flex;position: absolute; justify-content: center;align-items: center;margin: 0 auto;
+}
+
+.div1_jil img:hover, .d1b2 img:hover, .d1b3 img:hover{
+    transform: scale(1.01);
+
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.alldivmon p{
+    pointer-events: none;
+}
+
+
+

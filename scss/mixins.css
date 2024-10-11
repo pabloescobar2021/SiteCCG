@@ -307,4 +307,12 @@
   justify-content: center;
   margin: 0 auto;
   font-size: 60px;
+}
+
+.battxt_1 {
+  background: rgb(138, 95, 46);
+  background: linear-gradient(90deg, rgb(74, 60, 60) 0%, rgb(61, 27, 27) 31%, rgb(106, 65, 14) 73%, black 98%);
+  background-size: 400% 400%; /* Увеличение размера градиента для плавной анимации */
+  animation: grad_all-animation 20s ease infinite; /* Анимация длительностью 10 секунд */
+  opacity: 1;
 }/*# sourceMappingURL=mixins.css.map */

@@ -96,7 +96,7 @@ sass --watch scss/main.scss:css/main.css
     display: grid; 
     justify-content: center;align-items: center;margin: 0 auto;margin-top: 0px; text-align: center;
     font-family: "Montserrat", sans-serif; font-size: 18px; color: white;width: 100%; height: auto;
-    background-image: linear-gradient(to right, rgba(228, 135, 73, 0.499), rgba(21, 7, 4, 0.499));
+    background-image: linear-gradient(to right, rgba(238, 212, 195, 0.499), rgba(21, 7, 4, 0.499));
     border-radius: 5px;
 }
 .divonas1 p{
@@ -1452,7 +1452,7 @@ position: absolute;display: flex; justify-content: center; align-items: center; 
 
 
 .blagoalldiv{
-    display: grid;justify-content: center;align-items: center;grid-template-columns: 60%;
+    display: grid;justify-content: center;align-items: center;grid-template-columns: 100%;
     color: white; background-color: #71522661;font-family: "Arial", sans-serif;
     font-size: 30px; width: 100%;
 }
@@ -1460,12 +1460,104 @@ position: absolute;display: flex; justify-content: center; align-items: center; 
     position: relative; 
     display: flex; justify-content:left ;cursor: pointer; align-items: center;margin: 0 auto;
     background-color: #8a723e;border: solid 2px black; border-radius: 10px;
-    width: 100%;height: auto;text-indent: 20px;
+    width: 100%;text-indent: 20px;
+    min-height: 100px; height: auto;
 }
 .intopunder {display: none;
     justify-content: center;align-items: center;margin: 0 auto;text-align: center;font-size: 25px;
-    background-color: #906b219d; border-radius: 15px;
-    width: 100%; height: 60px;
+    background-color: #201d169d; 
+    width: 100%; height: auto; 
+}
+.intopunder img{
+    display: flex; justify-content: center;align-items: center;margin: 0 auto;
+    filter: brightness(80%); border-radius: 10px;
+    margin-top: 20px; 
+    width: 50%;
+}
+.intopunder img:hover{
+   
+}
+
+
+
+
+.divblagusl{
+    display: flex;flex: 1 1 30%; width: 500px;
+    justify-content: center;align-items: center;position: relative;
+    color: white; font-size: 32px;
+    height: auto;
+    overflow: hidden;
 
 }
 
+.divblagusl img{
+    display: flex; position: relative;
+    width: 100%;height: 400px; 
+    z-index: 0;
+    transition: transform 0.9s ease, background-image 2s ease;
+}
+.divblagusl:hover img{
+    transform: scale(1.02);
+}
+.divblagusl::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.726) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+
+.divblagusl::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.726) 0%, rgba(0, 0, 0, 0) 80%);
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+
+.divblagusl:hover::after{
+    opacity: 1;
+}
+
+
+.divblagusl:hover::after{
+    content: '';
+    position: absolute;
+    opacity: 1;
+}
+
+.divblagusl p {
+    display: flex; justify-content: center;align-items: center; margin: 0 auto; text-align: center;
+    width: 100%; height: 100px; 
+    position: absolute;
+    font-family: "Montserrat", sans-serif; font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    pointer-events: none;
+}
+
+@media (max-width:1200px) {
+    .divblagusl{
+       flex: 1 1 50%;
+    }
+    .divblagusl img{
+        height: 300px; width: 100%;
+    }
+}
+@media (max-width:500px){
+    .divblagusl{
+        flex: 1 1 100%;
+     }
+     .divblagusl img{
+         height: 300px; width: 100%;
+     }
+}

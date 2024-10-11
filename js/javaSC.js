@@ -18,9 +18,23 @@
     }
 
 
+    
 
+    // scrollIntoView to svyaz
+    const allbutmenu = document.querySelectorAll('.MenuBut');
 
-
+    allbutmenu.forEach((button)=>{
+        if (button.textContent.trim() === 'КОНТАКТЫ' ){
+            const target_kont_svyaz = document.querySelector('.div_grid_svyaz');
+            
+            if (target_kont_svyaz) {
+                button.addEventListener('click', function(event){
+                    event.preventDefault();
+                    target_kont_svyaz.scrollIntoView({ behavior: "smooth"});
+                });
+            }
+        }
+    });
 
 
 
