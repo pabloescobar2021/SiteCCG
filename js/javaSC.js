@@ -1,4 +1,6 @@
 
+
+
     
     
     function toggleMenu() {
@@ -17,6 +19,10 @@
         aboutLink.href = 'pages/Onas.html'; // Задаем ссылку
     }
 
+    const aboutLink_mobile = document.querySelector('.Nav_ccilki');
+ if(aboutLink_mobile) {
+    aboutLink_mobile.href = 'pages/Onas.html';
+ }
 
     
 
@@ -37,8 +43,67 @@
     });
 
 
+// scrollIntoView to kontakti
+document.addEventListener('DOMContentLoaded', () =>{
+    const kontlink_mobile1 = document.querySelectorAll('.mobile-menu .Nav_ccilki');
+
+    kontlink_mobile1.forEach((button)=>{
+        const svyazinto = document.querySelector('.div_grid_svyaz');
+      if (button.textContent.trim() === 'КОНТАКТЫ') {
+        button.addEventListener('click', function(){
+            button.preventDefault();
+            svyazinto.scrollIntoView({behavior: 'smooth'});
+
+        })
+      }   
+    })
+ })
 
 
+
+
+
+
+
+
+ 
+
+//  -------------------Отключил 2 контейнер по счету
+document.addEventListener('DOMContentLoaded', () =>{
+    const marg12Divs = document.querySelectorAll('.marg12');
+    const foot = document.querySelector('.footer_div');
+    const dda = document.querySelector(".dda");
+
+    // Проверяем, есть ли второй элемент в NodeList
+    if (marg12Divs.length >= 2) {
+        // Применяем display: none к второму элементу
+        marg12Divs[1].style.display = 'none';
+        foot.style.gridTemplateColumns = "100%";
+        dda.style.marginBottom = "20px"
+        
+    }
+})
+
+    // -----------------Добавляю ИНН и ОГРН
+    document.addEventListener('DOMContentLoaded', () => {
+        const footcont = document.querySelector('.dda');
+        
+        // Массив с новыми значениями
+        const txt11 = [ 
+            {text: "ИНН 2366040859"},
+            {text: "ОГРН 1232300019401"}  
+        ];
+    
+        // Ищем все элементы <p> внутри .dda
+        const paragraphs = footcont.querySelectorAll('p');
+    
+        // Заменяем текст в нужных <p> элементах
+        if (paragraphs.length >= 3) {
+            paragraphs[1].textContent = txt11[0].text; // Меняем 3-й <p> (ИНН)
+            paragraphs[2].textContent = txt11[1].text; // Меняем 4-й <p> (ОГРН)
+        }
+    });
+    
 
 
 

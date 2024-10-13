@@ -1,0 +1,270 @@
+
+
+.svarkaall{}
+.svarkaall h1, h2 {
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;align-items: center;margin: 0 auto;
+    width: 100%;
+}
+
+
+
+.welding-section {
+    background-color: #f5f5f5; /* Светлый фон для контраста */
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.work-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    background-color: rgba(195, 147, 93, 0.483);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1E90FF; /* Синий цвет для заголовков */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+/* Вступительный блок */
+.intro-section {
+    background-color: #7d5d2e;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.intro-section div{
+    display: grid; justify-content: center;align-items: center;margin: 0 auto;
+}
+
+.intro-section p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+/* Преимущества */
+.advantages-section {
+    background-color: #fff;
+    padding: 40px 0;
+    justify-content: center;align-items: center;margin: 0 auto;
+}
+.cont1{
+
+}
+.advantages-grid {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.advantage-item {
+    flex: 1 1 200px; 
+    text-align: center;
+    background-color: #c48d1fa3;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.advantage-item img {
+    max-width: 60px;
+    margin-bottom: 10px;
+}
+
+.advantage-item:hover {
+    transform: scale(1.05);
+}
+
+/* Галерея проектов */
+.portfolio-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    flex: 1 1 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Форма запроса расчета */
+.quote-form-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.quote-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quote-form input, .quote-form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.quote-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.quote-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Видео секция */
+.video-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Отзывы */
+.reviews-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Часто задаваемые вопросы */
+.faq-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #004085;
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    color: #333;
+}

@@ -17,10 +17,49 @@ mobbut_toIndex.addEventListener('click', function(){
  const aboutLink1 = document.querySelector('.a_nav1 .MenuBut'); // Находим первый элемент с классом MenuBut
  if (aboutLink1) {
      aboutLink1.href = 'Onas.html'; // Задаем ссылку
- }
+ };
+
+ document.addEventListener('DOMContentLoaded', () => {
+    const aboutLink_mobile = document.querySelector('.mobile-menu .Nav_ccilki');
+    if(aboutLink_mobile) {
+       aboutLink_mobile.href = 'Onas.html';
+    }
+ })
+ 
+
+    // scrollIntoView to kontakti
+ document.addEventListener('DOMContentLoaded', () =>{
+    const kontlink_mobile = document.querySelectorAll('.mobile-menu .Nav_ccilki');
+
+    kontlink_mobile.forEach((button)=>{
+
+      if (button.textContent.trim() === 'КОНТАКТЫ') {
+        button.addEventListener('click', function(){
+            window.location.href = "../index.html#div_grid_svyaz";
+        })
+        
+      }
+        
+    })
+
+ })
 
 
+ // scrollIntoView to svyaz
+//  const mobmenubut = document.querySelectorAll('.mobile-menu');
 
+//  mobmenubut.forEach((button)=>{
+//      if (button.textContent.trim() === 'КОНТАКТЫ' ){
+//         //  const target_kont_svyaz = document.querySelector('.div_grid_svyaz');
+//         button.addEventListener('click', function(){
+//             window.location.href = "../index.html#d222";
+//         })
+
+
+        
+//      }
+//  });
+ 
 
 
 

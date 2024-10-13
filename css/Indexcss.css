@@ -810,19 +810,24 @@ form {
             
         }
         .footer_div a:hover{
-            color: blue; font-weight: 600; 
+            color: blue; 
         }
 
         .halfunder {margin: 0 auto; width: 50%; background-color: rgb(89, 84, 84); height: 1px;}
         
-        .marg12 {margin-top: 50px; }
+        .marg12 {margin-top: 100px;display: flex;justify-content: center;align-items: center;margin: 0 auto;width: 100%;}
+
         .footer_div p, .footer_div a {height: auto;width:auto ; ;font-family: "Montserrat", sans-serif; font-size: 15px;text-align: left;  }
 
         @media (max-width:1200px) {
-         .footer_div {display: block; }   
-         .marg12{ flex:1 1 50%;} 
-         .footer_div p, .footer_div a {height: auto; font-size: 10px;}
-         .dda{ justify-content:center; align-items: center;}
+            .footer_div{
+                display: flex;flex-wrap: wrap; width: 100%
+            }
+            .dda{
+                width: 100%;height: auto; grid-template-columns: 30%; justify-content: center;align-items: center;margin: 0 auto;
+                text-align: left;
+            }
+            .footer_div p, .footer_div a{text-align: left;}
         }
 
 

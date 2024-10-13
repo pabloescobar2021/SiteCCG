@@ -189,12 +189,20 @@
 }
 .d1b2{
     display: flex; justify-content: center; align-items: center; margin: 0 auto; overflow: hidden;position: relative;
-    width: 100%;
+    width: 100%; text-align: center;
 }
 .d1b2 img{
     display: flex;flex: 1 1 50%;
     width: 100%;
      object-fit: fill;
+}
+@media(max-width:1200px){
+    .div1_2block{
+        flex-wrap: wrap; height: auto;
+    }
+    .d1b2 img{
+        flex: 1 1 100%;
+    }
 }
 .d1b2 p {
     display: flex; justify-content: center; align-items: center; margin: 0 auto;
@@ -203,7 +211,7 @@
 
 
 .d1b3{
-    display: flex;
+    display: flex; text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
