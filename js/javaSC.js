@@ -106,6 +106,17 @@ document.addEventListener('DOMContentLoaded', () =>{
     
 
 
+//  --------------------------DOBADLAYU V KAJDIY HREF #    
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.mobile-menu a'); // Находим все ссылки внутри .mobile-menu
+    
+        links.forEach(link => {
+            if (link.getAttribute('href') === "") { // Проверяем, пустой ли href
+                link.setAttribute('href', '#'); // Устанавливаем #
+            }
+        });
+    });
+    
 
 
 
