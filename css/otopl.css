@@ -10,7 +10,14 @@
     overflow: hidden; object-fit: fill;
     position: relative;
     background-size: cover; 
+    opacity: 0; /* Элемент изначально невидим */
+    transform: translateX(100px); /* Начальная позиция элемента ниже исходного места */
+    transition: opacity 0.6s ease, transform 0.5s ease; /* Плавный переход */
     
+}
+.o2.loaded{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .o2 h2{
@@ -18,7 +25,7 @@
     flex: 1 1 100%; 
     justify-content: center; align-items: center; margin: 0 auto;
     z-index: 4;
-    background-color: rgba(0, 0, 0, 0.306);
+    background-color: rgba(0, 0, 0, 0.13);
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 20px;
 }
@@ -31,8 +38,15 @@
     padding: 20px; margin-bottom: 10px; margin-right: 10px;
     background-color: rgba(34, 31, 29, 0.825); border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.675);
+    cursor: default;
 }
 
+.o2 div:hover{
+    transform: translate(2px);
+    transform: scale(1.02);
+    color: rgb(216, 170, 31);
+
+}
 
 .oaf2{
     position: relative;
